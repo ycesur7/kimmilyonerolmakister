@@ -1,0 +1,52 @@
+[
+  {
+    "id": 500,
+    "level": 3,
+    "question": "Bu şarkıyı kim söyler?",
+    "options": ["Tarkan", "Mustafa Sandal", "Teoman", "Kenan Doğulu"],
+    "answer": 0,
+    "musicUrl": "https://www.youtube.com/watch?v=HxW96IS7CM4",
+    "musicTitle": "Şımarık",
+    "note": "Tarkan'ın 1997 tarihli hit şarkısı."
+  },
+  {
+    "id": 501,
+    "level": 5,
+    "question": "Bu şarkının sanatçısı kimdir?",
+    "options": ["Sezen Aksu", "Ajda Pekkan", "Nilüfer", "Bergen"],
+    "answer": 0,
+    "musicUrl": "https://www.youtube.com/watch?v=kN_VQTyPZGQ",
+    "musicTitle": "Gülümse",
+    "note": "Sezen Aksu'nun klasik şarkısı."
+  },
+  {
+    "id": 502,
+    "level": 7,
+    "question": "Bu şarkıyı kim seslendirmiştir?",
+    "options": ["Barış Manço", "Cem Karaca", "Erkin Koray", "Edip Akbayram"],
+    "answer": 0,
+    "musicUrl": "https://www.youtube.com/watch?v=Wb5dQycDnPE",
+    "musicTitle": "Gülpembe",
+    "note": "Barış Manço'nun 1985 tarihli şarkısı."
+  },
+  {
+    "id": 503,
+    "level": 9,
+    "question": "Bu şarkının sanatçısı kimdir?",
+    "options": ["Teoman", "Şebnem Ferah", "Manga", "Duman"],
+    "answer": 1,
+    "musicUrl": "https://www.youtube.com/watch?v=qzGvDY5K7j4",
+    "musicTitle": "Masum Değiliz",
+    "note": "Şebnem Ferah'ın güçlü rock şarkısı."
+  },
+  {
+    "id": 504,
+    "level": 11,
+    "question": "Bu şarkıyı kim söyler?",
+    "options": ["Tarkan", "Mustafa Sandal", "Kenan Doğulu", "Teoman"],
+    "answer": 2,
+    "musicUrl": "https://www.youtube.com/watch?v=dHlvMKJrFYU",
+    "musicTitle": "Çakkıdı",
+    "note": "Kenan Doğulu'nun 2001 tarihli hit şarkısı."
+  }
+]

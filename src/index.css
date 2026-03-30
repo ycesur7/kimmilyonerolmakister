@@ -8,6 +8,26 @@ body {
   background: linear-gradient(135deg, #0a0e27 0%, #1a1f4d 50%, #2d1b69 100%);
   min-height: 100vh;
   overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(138, 43, 226, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
 }
 
 @layer components {
@@ -15,10 +35,27 @@ body {
     position: relative;
     clip-path: polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%);
     transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   }
   
-  .hexagon-button:hover {
+  .hexagon-button:hover:not(:disabled) {
     transform: scale(1.05);
     filter: brightness(1.2);
+    box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);
   }
+  
+  .hexagon-button:active:not(:disabled) {
+    transform: scale(0.98);
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.3), transparent);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
 }

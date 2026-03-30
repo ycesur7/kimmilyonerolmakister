@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import QuestionCard from './components/QuestionCard';
 import Sidebar from './components/Sidebar';
+import MusicPlayer from './components/MusicPlayer';
 import questionsData from './data/questions.json';
 import './App.css';
 
@@ -38,6 +39,8 @@ function App() {
   const [timeLeft, setTimeLeft] = useState(40);
   const [leaderboard, setLeaderboard] = useState([]);
   const [finalAmount, setFinalAmount] = useState('0 TL');
+  const [showMusicPlayer, setShowMusicPlayer] = useState(false);
+  const [musicEnded, setMusicEnded] = useState(false);
   
   const thinkingMusicRef = useRef(null);
   const correctSoundRef = useRef(null);
@@ -92,8 +95,17 @@ function App() {
     setCurrentQuestion(randomQuestion);
     setSelectedAnswer(null);
     setEliminatedOptions([]);
-    // Baraj sonrası (11-15) sorularda süre yok
-    setTimeLeft(level <= 10 ? 40 : null);
+    setMusicEnded(false);
+    
+    // Müzik sorusu mu kontrol et
+    if (randomQuestion.musicUrl) {
+      setShowMusicPlayer(true);
+      setTimeLeft(null); // Müzik bitene kadar süre başlamasın
+    } else {
+      setShowMusicPlayer(false);
+      // Baraj sonrası (11-15) sorularda süre yok
+      setTimeLeft(level <= 10 ? 40 : null);
+    }
   };
 
   const handleAnswer = (index) => {
@@ -104,7 +116,7 @@ function App() {
     
     setTimeout(() => {
       if (index === currentQuestion.answer) {
-        // Doğru cevap sesi
+        // Doğru cevap sesi (10 saniye alkış)
         correctSoundRef.current?.play().catch(e => console.log('Ses çalınamadı:', e));
         
         setTimeout(() => {
@@ -113,19 +125,31 @@ function App() {
           } else {
             setCurrentLevel(currentLevel + 1);
             loadQuestion(currentLevel + 1);
-            // Thinking müziğini tekrar başlat
-            if (thinkingMusicRef.current) {
+            // Thinking müziğini tekrar başlat (müzik sorusu değilse)
+            if (thinkingMusicRef.current && !currentQuestion.musicUrl) {
               thinkingMusicRef.current.currentTime = 0;
               thinkingMusicRef.current.play().catch(e => console.log('Müzik çalınamadı:', e));
             }
           }
-        }, 2000);
+        }, 10000); // 10 saniye alkış sesi
       } else {
         // Yanlış cevap sesi
         wrongSoundRef.current?.play().catch(e => console.log('Ses çalınamadı:', e));
-        setTimeout(() => handleWrongAnswer(), 2000);
+        setTimeout(() => handleWrongAnswer(), 3000);
       }
     }, 1000);
+  };
+  
+  const handleMusicEnd = () => {
+    setShowMusicPlayer(false);
+    setMusicEnded(true);
+    // Müzik bittikten sonra süreyi başlat
+    setTimeLeft(currentLevel <= 10 ? 40 : null);
+    // Thinking müziğini başlat
+    if (thinkingMusicRef.current) {
+      thinkingMusicRef.current.currentTime = 0;
+      thinkingMusicRef.current.play().catch(e => console.log('Müzik çalınamadı:', e));
+    }
   };
 
   const handleWrongAnswer = () => {
@@ -207,28 +231,45 @@ function App() {
         {gameState === 'welcome' && (
           <motion.div
             key="welcome"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-center"
           >
-            <h1 className="text-6xl font-bold text-game-gold mb-8 drop-shadow-lg">
-              Kim Milyoner Olmak İster?
-            </h1>
-            <input
-              type="text"
-              placeholder="Adınızı girin"
-              value={playerName}
-              onChange={(e) => setPlayerName(e.target.value)}
-              onKeyPress={(e) => e.key === 'Enter' && startGame()}
-              className="px-6 py-4 text-2xl rounded-lg bg-game-blue text-white border-2 border-game-gold mb-6 w-96"
-            />
-            <button
-              onClick={startGame}
-              className="px-12 py-4 text-2xl bg-gradient-to-r from-game-gold to-yellow-600 text-game-dark rounded-lg font-bold hover:scale-105 transition-transform"
+            <motion.h1 
+              initial={{ scale: 0.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.8, type: "spring" }}
+              className="text-7xl font-bold text-game-gold mb-8 drop-shadow-2xl"
             >
-              Oyuna Başla
-            </button>
+              Kim Milyoner Olmak İster?
+            </motion.h1>
+            <motion.div
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.5 }}
+            >
+              <input
+                type="text"
+                placeholder="Adınızı girin"
+                value={playerName}
+                onChange={(e) => setPlayerName(e.target.value)}
+                onKeyPress={(e) => e.key === 'Enter' && startGame()}
+                className="px-6 py-4 text-2xl rounded-lg bg-game-blue text-white border-2 border-game-gold mb-6 w-96 focus:outline-none focus:ring-4 focus:ring-game-gold/50"
+              />
+            </motion.div>
+            <motion.button
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.7 }}
+              whileHover={{ scale: 1.1, boxShadow: "0 0 30px rgba(255, 215, 0, 0.6)" }}
+              whileTap={{ scale: 0.95 }}
+              onClick={startGame}
+              className="px-12 py-4 text-2xl bg-gradient-to-r from-game-gold to-yellow-600 text-game-dark rounded-lg font-bold shadow-2xl"
+            >
+              🎮 Oyuna Başla
+            </motion.button>
           </motion.div>
         )}
 
@@ -264,45 +305,53 @@ function App() {
               />
 
               <div className="mt-6 flex gap-4 justify-center">
-                <button
+                <motion.button
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  whileTap={{ scale: 0.9 }}
                   onClick={useFiftyFifty}
                   disabled={!jokers.fiftyFifty}
-                  className={`px-6 py-3 text-xl rounded-lg font-bold transition-all ${
+                  className={`px-6 py-3 text-xl rounded-lg font-bold transition-all shadow-lg ${
                     jokers.fiftyFifty
-                      ? 'bg-gradient-to-r from-purple-600 to-purple-800 text-white hover:scale-105'
-                      : 'bg-gray-600 text-gray-400 cursor-not-allowed'
+                      ? 'bg-gradient-to-r from-purple-600 to-purple-800 text-white'
+                      : 'bg-gray-600 text-gray-400 cursor-not-allowed opacity-50'
                   }`}
                 >
-                  50:50
-                </button>
-                <button
+                  ✂️ 50:50
+                </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.1, rotate: -5 }}
+                  whileTap={{ scale: 0.9 }}
                   onClick={useAudience}
                   disabled={!jokers.audience}
-                  className={`px-6 py-3 text-xl rounded-lg font-bold transition-all ${
+                  className={`px-6 py-3 text-xl rounded-lg font-bold transition-all shadow-lg ${
                     jokers.audience
-                      ? 'bg-gradient-to-r from-blue-600 to-blue-800 text-white hover:scale-105'
-                      : 'bg-gray-600 text-gray-400 cursor-not-allowed'
+                      ? 'bg-gradient-to-r from-blue-600 to-blue-800 text-white'
+                      : 'bg-gray-600 text-gray-400 cursor-not-allowed opacity-50'
                   }`}
                 >
                   👥 Seyirci
-                </button>
-                <button
+                </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  whileTap={{ scale: 0.9 }}
                   onClick={usePhone}
                   disabled={!jokers.phone}
-                  className={`px-6 py-3 text-xl rounded-lg font-bold transition-all ${
+                  className={`px-6 py-3 text-xl rounded-lg font-bold transition-all shadow-lg ${
                     jokers.phone
-                      ? 'bg-gradient-to-r from-green-600 to-green-800 text-white hover:scale-105'
-                      : 'bg-gray-600 text-gray-400 cursor-not-allowed'
+                      ? 'bg-gradient-to-r from-green-600 to-green-800 text-white'
+                      : 'bg-gray-600 text-gray-400 cursor-not-allowed opacity-50'
                   }`}
                 >
                   📞 Telefon
-                </button>
-                <button
+                </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.1, boxShadow: "0 0 20px rgba(255, 0, 0, 0.6)" }}
+                  whileTap={{ scale: 0.9 }}
                   onClick={quitGame}
-                  className="px-6 py-3 text-xl bg-gradient-to-r from-red-600 to-red-800 text-white rounded-lg font-bold hover:scale-105 transition-all"
+                  className="px-6 py-3 text-xl bg-gradient-to-r from-red-600 to-red-800 text-white rounded-lg font-bold shadow-lg"
                 >
-                  Çekil
-                </button>
+                  🚪 Çekil
+                </motion.button>
               </div>
             </div>
 
@@ -310,42 +359,82 @@ function App() {
               moneyLadder={moneyLadder}
               currentLevel={currentLevel}
             />
+            
+            {/* Müzik Player */}
+            {showMusicPlayer && currentQuestion.musicUrl && (
+              <MusicPlayer
+                musicUrl={currentQuestion.musicUrl}
+                onMusicEnd={handleMusicEnd}
+              />
+            )}
           </motion.div>
         )}
 
         {gameState === 'gameover' && (
           <motion.div
             key="gameover"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.5, rotateY: 180 }}
+            animate={{ opacity: 1, scale: 1, rotateY: 0 }}
+            exit={{ opacity: 0, scale: 0.5 }}
+            transition={{ duration: 0.8, type: "spring" }}
             className="text-center"
           >
-            <h1 className="text-5xl font-bold text-game-gold mb-6">
-              Oyun Bitti!
-            </h1>
-            <p className="text-3xl text-white mb-4">
-              {playerName}, kazandığınız miktar:
-            </p>
-            <p className="text-6xl font-bold text-game-gold mb-8">
-              {finalAmount}
-            </p>
-
-            <div className="bg-game-blue/50 rounded-lg p-6 mb-8 max-w-md mx-auto">
-              <h2 className="text-2xl font-bold text-game-gold mb-4">🏆 Liderlik Tablosu</h2>
-              {leaderboard.map((entry, idx) => (
-                <div key={idx} className="text-white text-xl py-2 border-b border-game-gold/30">
-                  {idx + 1}. {entry.name} - {entry.amount}
-                </div>
-              ))}
-            </div>
-
-            <button
-              onClick={resetGame}
-              className="px-12 py-4 text-2xl bg-gradient-to-r from-game-gold to-yellow-600 text-game-dark rounded-lg font-bold hover:scale-105 transition-transform"
+            <motion.h1 
+              initial={{ y: -50 }}
+              animate={{ y: 0 }}
+              transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
+              className="text-6xl font-bold text-game-gold mb-6 drop-shadow-2xl"
             >
-              Yeniden Oyna
-            </button>
+              🎊 Oyun Bitti!
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
+              className="text-3xl text-white mb-4"
+            >
+              {playerName}, kazandığınız miktar:
+            </motion.p>
+            <motion.p 
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.7, type: "spring", stiffness: 150 }}
+              className="text-7xl font-bold text-game-gold mb-8 drop-shadow-2xl animate-pulse"
+            >
+              {finalAmount}
+            </motion.p>
+
+            <motion.div 
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.9 }}
+              className="bg-gradient-to-br from-game-blue/70 to-game-purple/70 rounded-lg p-6 mb-8 max-w-md mx-auto border-4 border-game-gold/50 shadow-2xl"
+            >
+              <h2 className="text-3xl font-bold text-game-gold mb-4">🏆 Liderlik Tablosu</h2>
+              {leaderboard.map((entry, idx) => (
+                <motion.div 
+                  key={idx}
+                  initial={{ x: -50, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 1.1 + idx * 0.1 }}
+                  className="text-white text-xl py-2 border-b border-game-gold/30 hover:bg-game-gold/20 transition-all"
+                >
+                  <span className="text-game-gold font-bold">{idx + 1}.</span> {entry.name} - <span className="text-game-gold">{entry.amount}</span>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            <motion.button
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 1.5, type: "spring", stiffness: 200 }}
+              whileHover={{ scale: 1.1, boxShadow: "0 0 40px rgba(255, 215, 0, 0.8)" }}
+              whileTap={{ scale: 0.9 }}
+              onClick={resetGame}
+              className="px-12 py-4 text-2xl bg-gradient-to-r from-game-gold to-yellow-600 text-game-dark rounded-lg font-bold shadow-2xl"
+            >
+              🔄 Yeniden Oyna
+            </motion.button>
           </motion.div>
         )}
       </AnimatePresence>

@@ -100,7 +100,10 @@ Online MP3 converter kullan (örn: y2mate.com, ytmp3.cc)
 ### Ses Sistemi Nasıl Çalışır?
 
 - **Soru başladığında**: `thinking.mp3` otomatik başlar ve loop olarak çalar
-- **Cevap verildiğinde**: Thinking müziği durur, `correct.mp3` veya `wrong.mp3` çalar
+- **Müzik sorusu**: YouTube'dan şarkı çalar (30 saniye), sonra thinking başlar
+- **Cevap verildiğinde**: Thinking müziği durur
+  - Doğru: `correct.mp3` çalar (10 saniye alkış)
+  - Yanlış: `wrong.mp3` çalar (3-5 saniye)
 - **Sonraki soru**: Thinking müziği tekrar başlar
 - **Baraj sonrası (11-15)**: Süre yok ama müzik çalmaya devam eder
 

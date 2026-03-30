@@ -5,8 +5,8 @@
 Bu klasöre şu 3 dosyayı eklemelisin:
 
 1. **thinking.mp3** (40 saniye) - Soru okunurken çalan müzik
-2. **correct.mp3** (3-5 saniye) - Doğru cevap sesi
-3. **wrong.mp3** (3-5 saniye) - Yanlış cevap sesi
+2. **correct.mp3** (10 saniye) - Doğru cevap alkış sesi
+3. **wrong.mp3** (3-5 saniye) - Yanlış cevap dramatik sesi
 
 ## 📥 Nasıl İndirilir?
 
