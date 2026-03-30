@@ -3928,15 +3928,15 @@
   {
     "id": 303,
     "level": 2,
-    "question": "'Muhteşem Yüzyıl' dizisinde Kanuni Sultan Süleyman'ı kim canlandırmıştır?",
+    "question": "Hangi gezegen Güneş Sistemi'nde halkalarıyla ünlüdür?",
     "options": [
-      "Halit Ergenç",
-      "Kıvanç Tatlıtuğ",
-      "Burak Özçivit",
-      "Engin Altan"
+      "Jüpiter",
+      "Satürn",
+      "Uranüs",
+      "Neptün"
     ],
-    "answer": 0,
-    "note": "Halit Ergenç bu rolü canlandırdı."
+    "answer": 1,
+    "note": "Satürn'ün görkemli halkaları vardır."
   },
   {
     "id": 304,
@@ -3993,15 +3993,15 @@
   {
     "id": 308,
     "level": 3,
-    "question": "'Ezel' dizisinde Ezel karakterini kim canlandırmıştır?",
+    "question": "Hangi ülkenin para birimi Euro'dur?",
     "options": [
-      "Kenan İmirzalıoğlu",
-      "Kıvanç Tatlıtuğ",
-      "Çağatay Ulusoy",
-      "Can Yaman"
+      "İngiltere",
+      "Almanya",
+      "İsviçre",
+      "Norveç"
     ],
-    "answer": 0,
-    "note": "Kenan İmirzalıoğlu Ezel rolünü oynadı."
+    "answer": 1,
+    "note": "Almanya Euro Bölgesi üyesidir."
   },
   {
     "id": 309,
@@ -4058,15 +4058,15 @@
   {
     "id": 313,
     "level": 4,
-    "question": "'Kurtlar Vadisi' dizisinde Polat Alemdar'ı kim canlandırmıştır?",
+    "question": "Hangi element periyodik tabloda 'Na' sembolü ile gösterilir?",
     "options": [
-      "Necati Şaşmaz",
-      "Oktay Kaynarca",
-      "Kenan İmirzalıoğlu",
-      "Erdal Beşikçioğlu"
+      "Neon",
+      "Nikel",
+      "Sodyum",
+      "Azot"
     ],
-    "answer": 0,
-    "note": "Necati Şaşmaz bu ikonik rolü oynadı."
+    "answer": 2,
+    "note": "Na, Latince 'Natrium' kelimesinden gelir."
   },
   {
     "id": 314,
@@ -4123,15 +4123,15 @@
   {
     "id": 318,
     "level": 5,
-    "question": "'Avrupa Yakası' dizisinde Aslı karakterini kim canlandırmıştır?",
+    "question": "Hangi ülke Akropolis antik kentinin bulunduğu yerdir?",
     "options": [
-      "Gülse Birsel",
-      "Demet Akbağ",
-      "Ata Demirer",
-      "Levent Üzümcü"
+      "İtalya",
+      "Yunanistan",
+      "Türkiye",
+      "Mısır"
     ],
     "answer": 1,
-    "note": "Demet Akbağ Aslı Süslü rolünü oynadı."
+    "note": "Akropolis Atina, Yunanistan'dadır."
   },
   {
     "id": 319,
@@ -4188,15 +4188,15 @@
   {
     "id": 323,
     "level": 6,
-    "question": "'Çukur' dizisinde Yamaç Koçovalı'yı kim canlandırmıştır?",
+    "question": "Hangi element periyodik tabloda 'Pb' sembolü ile gösterilir?",
     "options": [
-      "Aras Bulut İynemli",
-      "Çağatay Ulusoy",
-      "Burak Deniz",
-      "Alperen Duymaz"
+      "Platin",
+      "Kurşun",
+      "Paladyum",
+      "Fosfor"
     ],
-    "answer": 0,
-    "note": "Aras Bulut İynemli bu rolü oynadı."
+    "answer": 1,
+    "note": "Pb, Latince 'Plumbum' (kurşun) kelimesinden gelir."
   },
   {
     "id": 324,
@@ -4253,15 +4253,15 @@
   {
     "id": 328,
     "level": 7,
-    "question": "'Diriliş Ertuğrul' dizisinde Ertuğrul Bey'i kim canlandırmıştır?",
+    "question": "Hangi yıl Osmanlı İmparatorluğu sona ermiştir?",
     "options": [
-      "Engin Altan Düzyatan",
-      "Burak Özçivit",
-      "Kıvanç Tatlıtuğ",
-      "Çağatay Ulusoy"
+      "1918",
+      "1920",
+      "1922",
+      "1923"
     ],
-    "answer": 0,
-    "note": "Engin Altan Düzyatan bu rolü oynadı."
+    "answer": 2,
+    "note": "1 Kasım 1922'de saltanat kaldırıldı."
   },
   {
     "id": 329,
@@ -4318,15 +4318,15 @@
   {
     "id": 333,
     "level": 8,
-    "question": "'Yaprak Dökümü' dizisinde Ali Rıza Bey'i kim canlandırmıştır?",
+    "question": "Hangi element periyodik tabloda 'Sn' sembolü ile gösterilir?",
     "options": [
-      "Haluk Bilginer",
-      "Tuncel Kurtiz",
-      "Şener Şen",
-      "Kadir İnanır"
+      "Silisyum",
+      "Kalay",
+      "Stronsiyum",
+      "Sezyum"
     ],
     "answer": 1,
-    "note": "Tuncel Kurtiz bu rolü oynadı."
+    "note": "Sn, Latince 'Stannum' (kalay) kelimesinden gelir."
   },
   {
     "id": 334,
@@ -4383,15 +4383,15 @@
   {
     "id": 338,
     "level": 9,
-    "question": "'Behzat Ç.' dizisinde Behzat karakterini kim canlandırmıştır?",
+    "question": "Hangi Osmanlı padişahı 'Yavuz' lakabıyla anılır?",
     "options": [
-      "Erdal Beşikçioğlu",
-      "Haluk Bilginer",
-      "Yılmaz Erdoğan",
-      "Cem Yılmaz"
+      "I. Selim",
+      "I. Süleyman",
+      "II. Mehmet",
+      "I. Murat"
     ],
     "answer": 0,
-    "note": "Erdal Beşikçioğlu bu rolü oynadı."
+    "note": "Yavuz Sultan Selim 1512-1520 arası hüküm sürdü."
   },
   {
     "id": 339,
@@ -4448,15 +4448,15 @@
   {
     "id": 343,
     "level": 10,
-    "question": "'Aşk-ı Memnu' dizisinde Bihter karakterini kim canlandırmıştır?",
+    "question": "Hangi element periyodik tabloda 'W' sembolü ile gösterilir?",
     "options": [
-      "Beren Saat",
-      "Bergüzar Korel",
-      "Cansu Dere",
-      "Tuba Büyüküstün"
+      "Vanadyum",
+      "Tungsten",
+      "Uranyum",
+      "Xenon"
     ],
-    "answer": 0,
-    "note": "Beren Saat bu rolü oynadı."
+    "answer": 1,
+    "note": "W, Almanca 'Wolfram' kelimesinden gelir."
   },
   {
     "id": 344,
@@ -4513,15 +4513,15 @@
   {
     "id": 348,
     "level": 11,
-    "question": "'Fatmagül'ün Suçu Ne?' dizisinde Fatmagül'ü kim canlandırmıştır?",
+    "question": "Osmanlı İmparatorluğu'nun en uzun süre hüküm süren padişahı kimdir?",
     "options": [
-      "Beren Saat",
-      "Bergüzar Korel",
-      "Cansu Dere",
-      "Tuba Büyüküstün"
+      "I. Süleyman",
+      "II. Abdülhamit",
+      "I. Murat",
+      "II. Mehmet"
     ],
     "answer": 1,
-    "note": "Bergüzar Korel bu rolü oynadı."
+    "note": "II. Abdülhamit 33 yıl hüküm sürdü (1876-1909)."
   },
   {
     "id": 349,
@@ -4578,15 +4578,15 @@
   {
     "id": 353,
     "level": 12,
-    "question": "'Gülbeyaz' dizisinde başrolü kim canlandırmıştır?",
+    "question": "Hangi Osmanlı padişahı 'Gazi' unvanını almıştır?",
     "options": [
-      "Türkan Şoray",
-      "Hülya Koçyiğit",
-      "Fatma Girik",
-      "Filiz Akın"
+      "Osman Gazi",
+      "Orhan Gazi",
+      "I. Murat",
+      "Hepsi"
     ],
-    "answer": 0,
-    "note": "Türkan Şoray Türk sinemasının sultanıdır."
+    "answer": 3,
+    "note": "İlk üç Osmanlı hükümdarı Gazi unvanı aldı."
   },
   {
     "id": 354,
@@ -4643,15 +4643,15 @@
   {
     "id": 358,
     "level": 13,
-    "question": "'Seksenler' dizisi hangi yılları konu alır?",
+    "question": "Hangi Osmanlı padişahı 'Yıldırım' lakabıyla anılır?",
     "options": [
-      "1970'ler",
-      "1980'ler",
-      "1990'lar",
-      "2000'ler"
+      "I. Murat",
+      "I. Bayezid",
+      "I. Mehmet",
+      "II. Murat"
     ],
     "answer": 1,
-    "note": "Dizi 1980'li yılları anlatır."
+    "note": "Yıldırım Bayezid hızlı seferleriyle ünlüdür."
   },
   {
     "id": 359,
@@ -4708,15 +4708,15 @@
   {
     "id": 363,
     "level": 14,
-    "question": "'Yabancı Damat' dizisinde Niko karakterini kim canlandırmıştır?",
+    "question": "Osmanlı İmparatorluğu'nda 'Tanzimat Fermanı' hangi padişah döneminde ilan edilmiştir?",
     "options": [
-      "Haluk Bilginer",
-      "Özgür Çevik",
-      "Tolga Çevik",
-      "Cem Yılmaz"
+      "II. Mahmut",
+      "Abdülmecit",
+      "Abdülaziz",
+      "II. Abdülhamit"
     ],
     "answer": 1,
-    "note": "Özgür Çevik Niko rolünü oynadı."
+    "note": "Tanzimat Fermanı 1839'da Abdülmecit döneminde ilan edildi."
   },
   {
     "id": 364,
@@ -4773,15 +4773,15 @@
   {
     "id": 368,
     "level": 15,
-    "question": "'Kardeş Payı' dizisinde Bora karakterini kim canlandırmıştır?",
+    "question": "Osmanlı İmparatorluğu'nun en uzun süren savaşı hangisidir?",
     "options": [
-      "Ahmet Kural",
-      "Murat Cemcir",
-      "Şahan Gökbakar",
-      "Cem Yılmaz"
+      "Viyana Kuşatması",
+      "Çanakkale Savaşı",
+      "Balkan Savaşları",
+      "Osmanlı-Avusturya Savaşları"
     ],
-    "answer": 0,
-    "note": "Ahmet Kural Bora rolünü oynadı."
+    "answer": 3,
+    "note": "Osmanlı-Avusturya savaşları yüzyıllar sürdü."
   },
   {
     "id": 369,

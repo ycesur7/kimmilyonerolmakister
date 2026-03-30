@@ -7,12 +7,13 @@ const QuestionCard = ({ question, selectedAnswer, onAnswer, eliminatedOptions, p
     if (eliminatedOptions.includes(index)) {
       return 'bg-gray-700 opacity-30 cursor-not-allowed';
     }
-    if (selectedAnswer === index) {
-      if (index === question.answer) {
-        return 'bg-gradient-to-r from-green-500 to-green-700 scale-105';
-      } else {
-        return 'bg-gradient-to-r from-red-500 to-red-700 scale-105';
-      }
+    // Doğru cevabı her zaman yeşil göster (yanlış seçildiğinde)
+    if (selectedAnswer !== null && index === question.answer) {
+      return 'bg-gradient-to-r from-green-500 to-green-700 scale-105';
+    }
+    // Yanlış seçilen cevabı kırmızı göster
+    if (selectedAnswer === index && index !== question.answer) {
+      return 'bg-gradient-to-r from-red-500 to-red-700 scale-105';
     }
     if (pendingAnswer === index) {
       return 'bg-gradient-to-r from-yellow-500 to-orange-600';
