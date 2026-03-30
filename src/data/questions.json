@@ -5004,7 +5004,7 @@
   {
     "id": 387,
     "level": 10,
-    "question": "Kemal Sunal'ın 'Banker Bilo' filminde Bilo'nun mesleği nedir?",
+    "question": "Türk Dizilerinden olan 'Banker Bilo' filminde Bilo'nun mesleği nedir?",
     "options": [
       "Banker",
       "Berber",
@@ -5056,7 +5056,7 @@
     "options": [
       "Hasanpaşa",
       "Hacıveliler",
-      "Karaköy",
+      "Haraptar",
       "Yeşilköy"
     ],
     "answer": 1
@@ -5331,11 +5331,11 @@
     "question": "'Yıldızların Altında' şarkısı kimin?",
     "options": [
       "Sezen Aksu",
-      "Ajda Pekkan",
+      "Ömer Bedrettin Uşaklı",
       "Nilüfer",
       "Sertab Erener"
     ],
-    "answer": 0
+    "answer": 1
   },
   {
     "id": 377,
