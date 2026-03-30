@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f4d 50%, #2d1b69 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .hexagon-button {
+    position: relative;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%);
+    transition: all 0.3s ease;
+  }
+  
+  .hexagon-button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+  }
+}

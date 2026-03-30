@@ -1,0 +1,2368 @@
+[
+  {
+    "id": 1,
+    "level": 1,
+    "question": "Türkiye'nin başkenti neresidir?",
+    "options": ["İstanbul", "Ankara", "İzmir", "Bursa"],
+    "answer": 1,
+    "note": "1923'ten beri Ankara başkenttir."
+  },
+  {
+    "id": 2,
+    "level": 1,
+    "question": "Bir yılda kaç ay vardır?",
+    "options": ["10", "11", "12", "13"],
+    "answer": 2,
+    "note": "Takvim yılı 12 aydan oluşur."
+  },
+  {
+    "id": 3,
+    "level": 1,
+    "question": "Güneş hangi yönden doğar?",
+    "options": ["Batı", "Doğu", "Kuzey", "Güney"],
+    "answer": 1,
+    "note": "Dünya'nın dönüş yönü nedeniyle güneş doğudan doğar."
+  },
+  {
+    "id": 4,
+    "level": 1,
+    "question": "Türk bayrağında kaç yıldız vardır?",
+    "options": ["1", "2", "3", "5"],
+    "answer": 0,
+    "note": "Ay-yıldız sembolü tek yıldızdan oluşur."
+  },
+  {
+    "id": 5,
+    "level": 1,
+    "question": "İnsan vücudunda kaç göz vardır?",
+    "options": ["1", "2", "3", "4"],
+    "answer": 1,
+    "note": "İnsanlar iki gözle görür."
+  },
+  {
+    "id": 6,
+    "level": 1,
+    "question": "Hangi hayvan miyavlar?",
+    "options": ["Köpek", "Kedi", "Kuş", "Balık"],
+    "answer": 1,
+    "note": "Kediler miyavlayarak iletişim kurar."
+  },
+  {
+    "id": 7,
+    "level": 1,
+    "question": "Dünyanın en büyük okyanusu hangisidir?",
+    "options": ["Atlas", "Hint", "Pasifik", "Arktik"],
+    "answer": 2,
+    "note": "Pasifik Okyanusu dünyanın yüzölçümünün yaklaşık 1/3'ünü kaplar."
+  },
+  {
+    "id": 8,
+    "level": 1,
+    "question": "Hangi renk gökyüzünün rengini ifade eder?",
+    "options": ["Yeşil", "Mavi", "Kırmızı", "Sarı"],
+    "answer": 1,
+    "note": "Atmosferdeki ışık kırılması gökyüzünü mavi gösterir."
+  },
+  {
+    "id": 9,
+    "level": 1,
+    "question": "Bir haftada kaç gün vardır?",
+    "options": ["5", "6", "7", "8"],
+    "answer": 2,
+    "note": "Hafta 7 günden oluşur."
+  },
+  {
+    "id": 10,
+    "level": 1,
+    "question": "Hangi meyve genellikle kırmızıdır ve öğretmenlere hediye edilir?",
+    "options": ["Muz", "Elma", "Portakal", "Üzüm"],
+    "answer": 1,
+    "note": "Elma öğretmenlere verilen klasik hediyedir."
+  },
+  {
+    "id": 11,
+    "level": 2,
+    "question": "Türkiye'nin en kalabalık şehri hangisidir?",
+    "options": ["Ankara", "İzmir", "İstanbul", "Bursa"],
+    "answer": 2,
+    "note": "İstanbul 15 milyondan fazla nüfusa sahiptir."
+  },
+  {
+    "id": 12,
+    "level": 2,
+    "question": "Hangi gezegen 'Kırmızı Gezegen' olarak bilinir?",
+    "options": ["Venüs", "Mars", "Jüpiter", "Satürn"],
+    "answer": 1,
+    "note": "Mars'ın yüzeyindeki demir oksit kırmızı renk verir."
+  },
+  {
+    "id": 13,
+    "level": 2,
+    "question": "Türkiye hangi kıtada yer alır?",
+    "options": ["Sadece Avrupa", "Sadece Asya", "Avrupa ve Asya", "Afrika"],
+    "answer": 2,
+    "note": "Türkiye iki kıtaya yayılmış bir ülkedir."
+  },
+  {
+    "id": 14,
+    "level": 2,
+    "question": "Hangi vitamin portakalda bol miktarda bulunur?",
+    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    "answer": 2,
+    "note": "Portakal C vitamini açısından zengindir."
+  },
+  {
+    "id": 15,
+    "level": 2,
+    "question": "Olimpiyat Oyunları kaç yılda bir düzenlenir?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 2,
+    "note": "Yaz ve Kış Olimpiyatları 4 yılda bir yapılır."
+  }
+,
+  {
+    "id": 16,
+    "level": 2,
+    "question": "Hangi hayvan en hızlı koşan kara hayvanıdır?",
+    "options": ["Aslan", "Çita", "Leopar", "Kaplan"],
+    "answer": 1,
+    "note": "Çita saatte 120 km hıza ulaşabilir."
+  },
+  {
+    "id": 17,
+    "level": 2,
+    "question": "Türkiye'nin milli sporu nedir?",
+    "options": ["Futbol", "Basketbol", "Güreş", "Yüzme"],
+    "answer": 2,
+    "note": "Güreş Türk kültüründe önemli bir yere sahiptir."
+  },
+  {
+    "id": 18,
+    "level": 2,
+    "question": "Hangi organ vücutta kanı pompalar?",
+    "options": ["Akciğer", "Kalp", "Karaciğer", "Böbrek"],
+    "answer": 1,
+    "note": "Kalp dolaşım sisteminin merkezidir."
+  },
+  {
+    "id": 19,
+    "level": 2,
+    "question": "Bir üçgenin iç açıları toplamı kaç derecedir?",
+    "options": ["90", "180", "270", "360"],
+    "answer": 1,
+    "note": "Tüm üçgenlerde iç açılar toplamı 180 derecedir."
+  },
+  {
+    "id": 20,
+    "level": 2,
+    "question": "Hangi element periyodik tabloda 'O' sembolü ile gösterilir?",
+    "options": ["Osmiyum", "Oksijen", "Altın", "Gümüş"],
+    "answer": 1,
+    "note": "Oksijen hayati öneme sahip bir elementtir."
+  },
+  {
+    "id": 21,
+    "level": 3,
+    "question": "Türkiye Cumhuriyeti hangi yıl kurulmuştur?",
+    "options": ["1920", "1921", "1922", "1923"],
+    "answer": 3,
+    "note": "29 Ekim 1923'te cumhuriyet ilan edildi."
+  },
+  {
+    "id": 22,
+    "level": 3,
+    "question": "Hangi şehir 'Yeşil Bursa' olarak bilinir?",
+    "options": ["Bursa", "Rize", "Trabzon", "Sakarya"],
+    "answer": 0,
+    "note": "Bursa yeşil alanları ile ünlüdür."
+  },
+  {
+    "id": 23,
+    "level": 3,
+    "question": "İstanbul Boğazı hangi iki denizi birleştirir?",
+    "options": ["Ege-Akdeniz", "Karadeniz-Marmara", "Marmara-Ege", "Akdeniz-Karadeniz"],
+    "answer": 1,
+    "note": "Boğaz Karadeniz ile Marmara Denizi'ni birleştirir."
+  },
+  {
+    "id": 24,
+    "level": 3,
+    "question": "Hangi Türk şairi 'Kendi Gök Kubbemiz' şiirini yazmıştır?",
+    "options": ["Nazım Hikmet", "Orhan Veli", "Yahya Kemal", "Mehmet Akif"],
+    "answer": 2,
+    "note": "Yahya Kemal Beyatlı'nın ünlü şiiridir."
+  },
+  {
+    "id": 25,
+    "level": 3,
+    "question": "Dünya'nın en yüksek dağı hangisidir?",
+    "options": ["K2", "Everest", "Kangchenjunga", "Lhotse"],
+    "answer": 1,
+    "note": "Everest 8.849 metre yüksekliğindedir."
+  },
+  {
+    "id": 26,
+    "level": 3,
+    "question": "Hangi vitamin güneş ışığından elde edilir?",
+    "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+    "answer": 3,
+    "note": "D vitamini güneş ışığı ile sentezlenir."
+  },
+  {
+    "id": 27,
+    "level": 3,
+    "question": "Türkiye'nin en uzun nehri hangisidir?",
+    "options": ["Fırat", "Dicle", "Kızılırmak", "Sakarya"],
+    "answer": 2,
+    "note": "Kızılırmak 1.355 km uzunluğundadır."
+  },
+  {
+    "id": 28,
+    "level": 3,
+    "question": "Hangi müzik aleti üflemeli çalgılar grubundandır?",
+    "options": ["Gitar", "Keman", "Flüt", "Davul"],
+    "answer": 2,
+    "note": "Flüt üflemeli bir çalgıdır."
+  },
+  {
+    "id": 29,
+    "level": 3,
+    "question": "Bir dakikada kaç saniye vardır?",
+    "options": ["30", "45", "60", "90"],
+    "answer": 2,
+    "note": "1 dakika = 60 saniye"
+  },
+  {
+    "id": 30,
+    "level": 3,
+    "question": "Hangi hayvan en büyük kara memelisidir?",
+    "options": ["Gergedan", "Fil", "Zürafa", "Su aygırı"],
+    "answer": 1,
+    "note": "Afrika fili en büyük kara memelisidir."
+  },
+  {
+    "id": 31,
+    "level": 4,
+    "question": "Türkiye'nin ilk cumhurbaşkanı kimdir?",
+    "options": ["İsmet İnönü", "Mustafa Kemal Atatürk", "Celal Bayar", "Fevzi Çakmak"],
+    "answer": 1,
+    "note": "Atatürk 1923-1938 arası cumhurbaşkanlığı yaptı."
+  },
+  {
+    "id": 32,
+    "level": 4,
+    "question": "Hangi element altın için kullanılan sembolü temsil eder?",
+    "options": ["Au", "Ag", "Fe", "Cu"],
+    "answer": 0,
+    "note": "Au, Latince 'Aurum' kelimesinden gelir."
+  },
+  {
+    "id": 33,
+    "level": 4,
+    "question": "Mona Lisa tablosunu kim yapmıştır?",
+    "options": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Donatello"],
+    "answer": 1,
+    "note": "Da Vinci'nin en ünlü eseridir."
+  },
+  {
+    "id": 34,
+    "level": 4,
+    "question": "Hangi gezegen Güneş Sistemi'nin en büyüğüdür?",
+    "options": ["Satürn", "Neptün", "Jüpiter", "Uranüs"],
+    "answer": 2,
+    "note": "Jüpiter bir gaz devidir."
+  },
+  {
+    "id": 35,
+    "level": 4,
+    "question": "Türkiye'de ilk demiryolu hangi şehirler arasında açılmıştır?",
+    "options": ["İstanbul-Ankara", "İzmir-Aydın", "Ankara-Eskişehir", "İstanbul-Edirne"],
+    "answer": 1,
+    "note": "1856'da İzmir-Aydın hattı açıldı."
+  },
+  {
+    "id": 36,
+    "level": 4,
+    "question": "Hangi deniz Türkiye'nin kuzeyinde yer alır?",
+    "options": ["Akdeniz", "Ege Denizi", "Marmara Denizi", "Karadeniz"],
+    "answer": 3,
+    "note": "Karadeniz kuzeyde yer alır."
+  },
+  {
+    "id": 37,
+    "level": 4,
+    "question": "Bir saatte kaç dakika vardır?",
+    "options": ["30", "45", "60", "90"],
+    "answer": 2,
+    "note": "1 saat = 60 dakika"
+  },
+  {
+    "id": 38,
+    "level": 4,
+    "question": "Hangi organ vücutta oksijen alımını sağlar?",
+    "options": ["Kalp", "Akciğer", "Mide", "Karaciğer"],
+    "answer": 1,
+    "note": "Akciğerler solunum sisteminin ana organıdır."
+  },
+  {
+    "id": 39,
+    "level": 4,
+    "question": "Türk alfabesinde kaç harf vardır?",
+    "options": ["26", "27", "28", "29"],
+    "answer": 3,
+    "note": "1928'de kabul edilen alfabede 29 harf var."
+  },
+  {
+    "id": 40,
+    "level": 4,
+    "question": "Hangi ülkenin başkenti Paris'tir?",
+    "options": ["İtalya", "İspanya", "Fransa", "Almanya"],
+    "answer": 2,
+    "note": "Paris Fransa'nın başkenti ve en büyük şehridir."
+  },
+  {
+    "id": 41,
+    "level": 5,
+    "question": "Türkiye'nin en büyük gölü hangisidir?",
+    "options": ["Tuz Gölü", "Van Gölü", "Beyşehir Gölü", "Eğirdir Gölü"],
+    "answer": 1,
+    "note": "Van Gölü aynı zamanda sodalı bir göldür."
+  },
+  {
+    "id": 42,
+    "level": 5,
+    "question": "Hangi bilim insanı yerçekimi kanununu bulmuştur?",
+    "options": ["Einstein", "Newton", "Galileo", "Tesla"],
+    "answer": 1,
+    "note": "Isaac Newton 1687'de yerçekimi yasasını formüle etti."
+  },
+  {
+    "id": 43,
+    "level": 5,
+    "question": "Türkiye'nin milli marşı 'İstiklal Marşı'nın bestecisi kimdir?",
+    "options": ["Zeki Müren", "Osman Zeki Üngör", "Sadettin Kaynak", "Cemal Reşit Rey"],
+    "answer": 1,
+    "note": "Güfte Mehmet Akif, beste Osman Zeki Üngör'e aittir."
+  },
+  {
+    "id": 44,
+    "level": 5,
+    "question": "Hangi element suyun kimyasal formülünde bulunmaz?",
+    "options": ["Hidrojen", "Oksijen", "Karbon", "Hepsi bulunur"],
+    "answer": 2,
+    "note": "Su H2O formülüne sahiptir, sadece hidrojen ve oksijen içerir."
+  },
+  {
+    "id": 45,
+    "level": 5,
+    "question": "Türkiye'nin ilk kadın savaş pilotu kimdir?",
+    "options": ["Sabiha Gökçen", "Bedriye Tahir", "Keriman Halis Ece", "Halide Edip"],
+    "answer": 0,
+    "note": "Sabiha Gökçen dünyanın ilk kadın savaş pilotlarındandır."
+  }
+,
+  {
+    "id": 46,
+    "level": 5,
+    "question": "Hangi yazar 'Tutunamayanlar' romanını yazmıştır?",
+    "options": ["Orhan Pamuk", "Oğuz Atay", "Yaşar Kemal", "Sabahattin Ali"],
+    "answer": 1,
+    "note": "Oğuz Atay'ın başyapıtıdır."
+  },
+  {
+    "id": 47,
+    "level": 5,
+    "question": "Bir dairenin çevresi nasıl hesaplanır?",
+    "options": ["2πr", "πr²", "πd", "2r"],
+    "answer": 0,
+    "note": "Çevre = 2 × pi × yarıçap"
+  },
+  {
+    "id": 48,
+    "level": 5,
+    "question": "Hangi vitamin pıhtılaşma için gereklidir?",
+    "options": ["Vitamin A", "Vitamin K", "Vitamin E", "Vitamin B12"],
+    "answer": 1,
+    "note": "K vitamini kan pıhtılaşmasında rol oynar."
+  },
+  {
+    "id": 49,
+    "level": 5,
+    "question": "Türkiye'nin en yüksek dağı hangisidir?",
+    "options": ["Erciyes", "Süphan", "Ağrı", "Uludağ"],
+    "answer": 2,
+    "note": "Ağrı Dağı 5.137 metre yüksekliğindedir."
+  },
+  {
+    "id": 50,
+    "level": 5,
+    "question": "Hangi gezegen halkalara sahiptir?",
+    "options": ["Mars", "Venüs", "Satürn", "Merkür"],
+    "answer": 2,
+    "note": "Satürn'ün buz ve kaya parçacıklarından oluşan halkaları vardır."
+  },
+  {
+    "id": 51,
+    "level": 6,
+    "question": "Osmanlı İmparatorluğu hangi yıl kurulmuştur?",
+    "options": ["1299", "1326", "1453", "1071"],
+    "answer": 0,
+    "note": "Osman Bey tarafından 1299'da kuruldu."
+  },
+  {
+    "id": 52,
+    "level": 6,
+    "question": "Hangi bilim insanı görelilik teorisini geliştirmiştir?",
+    "options": ["Newton", "Einstein", "Hawking", "Bohr"],
+    "answer": 1,
+    "note": "Albert Einstein 1905'te özel görelilik teorisini yayınladı."
+  },
+  {
+    "id": 53,
+    "level": 6,
+    "question": "Türkiye'nin kaç komşusu vardır?",
+    "options": ["6", "7", "8", "9"],
+    "answer": 2,
+    "note": "Türkiye 8 ülke ile komşudur."
+  },
+  {
+    "id": 54,
+    "level": 6,
+    "question": "Hangi okyanus en derin noktaya sahiptir?",
+    "options": ["Atlas", "Hint", "Pasifik", "Arktik"],
+    "answer": 2,
+    "note": "Mariana Çukuru Pasifik'te yer alır."
+  },
+  {
+    "id": 55,
+    "level": 6,
+    "question": "DNA'nın açılımı nedir?",
+    "options": ["Deoksiribonükleik Asit", "Diribonükleik Asit", "Deoksiriboz Asit", "Dioksiribonükleik Asit"],
+    "answer": 0,
+    "note": "DNA genetik bilgiyi taşır."
+  },
+  {
+    "id": 56,
+    "level": 6,
+    "question": "Hangi Türk besteci 'Üsküdar'a Gider İken' türküsünü bestelemiştir?",
+    "options": ["Halk türküsü", "Zeki Müren", "Barış Manço", "Cem Karaca"],
+    "answer": 0,
+    "note": "Anonim bir halk türküsüdür."
+  },
+  {
+    "id": 57,
+    "level": 6,
+    "question": "Işık hızı saniyede yaklaşık kaç kilometredir?",
+    "options": ["100.000 km", "200.000 km", "300.000 km", "400.000 km"],
+    "answer": 2,
+    "note": "Işık hızı yaklaşık 299.792 km/s'dir."
+  },
+  {
+    "id": 58,
+    "level": 6,
+    "question": "Hangi yıl İstanbul'un fethi gerçekleşmiştir?",
+    "options": ["1451", "1453", "1461", "1481"],
+    "answer": 1,
+    "note": "Fatih Sultan Mehmet 29 Mayıs 1453'te İstanbul'u fethetti."
+  },
+  {
+    "id": 59,
+    "level": 6,
+    "question": "Hangi element periyodik tabloda en hafif elementtir?",
+    "options": ["Helyum", "Hidrojen", "Lityum", "Karbon"],
+    "answer": 1,
+    "note": "Hidrojen atom numarası 1'dir."
+  },
+  {
+    "id": 60,
+    "level": 6,
+    "question": "Türkiye'nin en batı noktası hangi ildedir?",
+    "options": ["İzmir", "Çanakkale", "Edirne", "Balıkesir"],
+    "answer": 2,
+    "note": "Edirne'nin İpsala ilçesi en batı noktasıdır."
+  },
+  {
+    "id": 61,
+    "level": 7,
+    "question": "Hangi Osmanlı padişahı 'Kanuni' lakabıyla anılır?",
+    "options": ["I. Selim", "I. Süleyman", "II. Mehmet", "I. Murat"],
+    "answer": 1,
+    "note": "Kanuni Sultan Süleyman 1520-1566 arası hüküm sürdü."
+  },
+  {
+    "id": 62,
+    "level": 7,
+    "question": "Hangi yazar Nobel Edebiyat Ödülü almıştır?",
+    "options": ["Yaşar Kemal", "Orhan Pamuk", "Nazım Hikmet", "Aziz Nesin"],
+    "answer": 1,
+    "note": "Orhan Pamuk 2006'da Nobel aldı."
+  },
+  {
+    "id": 63,
+    "level": 7,
+    "question": "Hangi element suyun kaynama noktasını belirler?",
+    "options": ["Basınç", "Sıcaklık", "Nem", "Rüzgar"],
+    "answer": 0,
+    "note": "Atmosfer basıncı kaynama noktasını etkiler."
+  },
+  {
+    "id": 64,
+    "level": 7,
+    "question": "Türkiye'nin ilk milli parkı hangisidir?",
+    "options": ["Yozgat Çamlığı", "Uludağ", "Olimpos Beydağları", "Göreme"],
+    "answer": 0,
+    "note": "1958'de Yozgat Çamlığı milli park ilan edildi."
+  },
+  {
+    "id": 65,
+    "level": 7,
+    "question": "Hangi müzisyen 'Dönence' albümünü yapmıştır?",
+    "options": ["Barış Manço", "Cem Karaca", "Erkin Koray", "Moğollar"],
+    "answer": 1,
+    "note": "Cem Karaca'nın 1977 tarihli albümü."
+  },
+  {
+    "id": 66,
+    "level": 7,
+    "question": "Bir küpün kaç yüzü vardır?",
+    "options": ["4", "6", "8", "12"],
+    "answer": 1,
+    "note": "Küp 6 kare yüzden oluşur."
+  },
+  {
+    "id": 67,
+    "level": 7,
+    "question": "Hangi element elektriği en iyi iletir?",
+    "options": ["Bakır", "Gümüş", "Altın", "Alüminyum"],
+    "answer": 1,
+    "note": "Gümüş en iyi elektrik iletkenidir."
+  },
+  {
+    "id": 68,
+    "level": 7,
+    "question": "Türkiye'nin ilk üniversitesi hangisidir?",
+    "options": ["İstanbul Üniversitesi", "Ankara Üniversitesi", "İTÜ", "Boğaziçi"],
+    "answer": 0,
+    "note": "Darülfünun 1453'te kuruldu, 1933'te İstanbul Üniversitesi oldu."
+  },
+  {
+    "id": 69,
+    "level": 7,
+    "question": "Hangi yıl Çanakkale Savaşı yaşanmıştır?",
+    "options": ["1914", "1915", "1916", "1917"],
+    "answer": 1,
+    "note": "18 Mart 1915 Çanakkale Deniz Zaferi."
+  },
+  {
+    "id": 70,
+    "level": 7,
+    "question": "Hangi organ insülin hormonu salgılar?",
+    "options": ["Karaciğer", "Pankreas", "Böbrek", "Tiroid"],
+    "answer": 1,
+    "note": "Pankreas kan şekerini düzenler."
+  },
+  {
+    "id": 71,
+    "level": 8,
+    "question": "Türkiye'nin ilk kadın bakanı kimdir?",
+    "options": ["Türkan Akyol", "Tansu Çiller", "Meral Akşener", "Canan Karatay"],
+    "answer": 0,
+    "note": "Türkan Akyol 1971'de Sağlık Bakanı oldu."
+  },
+  {
+    "id": 72,
+    "level": 8,
+    "question": "Hangi element periyodik tabloda 'Fe' sembolü ile gösterilir?",
+    "options": ["Fosfor", "Flor", "Demir", "Fermi"],
+    "answer": 2,
+    "note": "Fe, Latince 'Ferrum' kelimesinden gelir."
+  },
+  {
+    "id": 73,
+    "level": 8,
+    "question": "Hangi Türk yönetmen 'Yol' filmiyle Cannes'da Altın Palmiye kazanmıştır?",
+    "options": ["Yılmaz Güney", "Nuri Bilge Ceylan", "Ferzan Özpetek", "Zeki Demirkubuz"],
+    "answer": 0,
+    "note": "Yılmaz Güney 1982'de bu ödülü aldı."
+  },
+  {
+    "id": 74,
+    "level": 8,
+    "question": "Hangi yıl Lozan Antlaşması imzalanmıştır?",
+    "options": ["1920", "1921", "1922", "1923"],
+    "answer": 3,
+    "note": "24 Temmuz 1923'te imzalandı."
+  },
+  {
+    "id": 75,
+    "level": 8,
+    "question": "Hangi matematikçi 'Pi sayısı'nın sembolünü kullanmaya başlamıştır?",
+    "options": ["Euler", "Pythagoras", "Archimedes", "William Jones"],
+    "answer": 3,
+    "note": "William Jones 1706'da π sembolünü kullandı."
+  },
+  {
+    "id": 76,
+    "level": 8,
+    "question": "Türkiye'nin en doğu ili hangisidir?",
+    "options": ["Van", "Ağrı", "Iğdır", "Kars"],
+    "answer": 2,
+    "note": "Iğdır'ın Tuzluca ilçesi en doğu noktasıdır."
+  },
+  {
+    "id": 77,
+    "level": 8,
+    "question": "Hangi yıl ilk insanlı uzay uçuşu gerçekleşmiştir?",
+    "options": ["1957", "1961", "1969", "1971"],
+    "answer": 1,
+    "note": "Yuri Gagarin 12 Nisan 1961'de uzaya çıktı."
+  },
+  {
+    "id": 78,
+    "level": 8,
+    "question": "Hangi Türk sporcusu olimpiyatlarda altın madalya kazanmıştır?",
+    "options": ["Naim Süleymanoğlu", "Hidayet Türkoğlu", "Hakan Şükür", "Rüştü Reçber"],
+    "answer": 0,
+    "note": "Naim Süleymanoğlu 3 olimpiyat altın madalyası kazandı."
+  },
+  {
+    "id": 79,
+    "level": 8,
+    "question": "Hangi element radyoaktif bozunma ile enerji üretir?",
+    "options": ["Karbon", "Uranyum", "Oksijen", "Azot"],
+    "answer": 1,
+    "note": "Uranyum nükleer enerjide kullanılır."
+  },
+  {
+    "id": 80,
+    "level": 8,
+    "question": "Türkiye'nin ilk cumhuriyet gazetesi hangisidir?",
+    "options": ["Cumhuriyet", "Milliyet", "Hürriyet", "Hakimiyet-i Milliye"],
+    "answer": 3,
+    "note": "Hakimiyet-i Milliye 1920'de kuruldu, sonra Ulus oldu."
+  },
+  {
+    "id": 81,
+    "level": 9,
+    "question": "Hangi Osmanlı padişahı 'Fatih' lakabıyla anılır?",
+    "options": ["I. Murat", "I. Mehmet", "II. Mehmet", "I. Süleyman"],
+    "answer": 2,
+    "note": "Fatih Sultan Mehmet İstanbul'u fethetti."
+  },
+  {
+    "id": 82,
+    "level": 9,
+    "question": "Hangi yazar 'İnce Memed' romanını yazmıştır?",
+    "options": ["Orhan Pamuk", "Yaşar Kemal", "Sabahattin Ali", "Reşat Nuri"],
+    "answer": 1,
+    "note": "Yaşar Kemal'in başyapıtıdır."
+  },
+  {
+    "id": 83,
+    "level": 9,
+    "question": "Hangi element periyodik tabloda 'Ag' sembolü ile gösterilir?",
+    "options": ["Altın", "Gümüş", "Alüminyum", "Argon"],
+    "answer": 1,
+    "note": "Ag, Latince 'Argentum' kelimesinden gelir."
+  },
+  {
+    "id": 84,
+    "level": 9,
+    "question": "Türkiye'nin ilk nükleer santrali hangi ildedir?",
+    "options": ["Mersin", "Sinop", "İzmir", "Antalya"],
+    "answer": 0,
+    "note": "Akkuyu Nükleer Santrali Mersin'dedir."
+  },
+  {
+    "id": 85,
+    "level": 9,
+    "question": "Hangi yıl Birinci Dünya Savaşı başlamıştır?",
+    "options": ["1912", "1914", "1916", "1918"],
+    "answer": 1,
+    "note": "28 Temmuz 1914'te başladı."
+  },
+  {
+    "id": 86,
+    "level": 9,
+    "question": "Hangi gezegen Güneş'e en yakındır?",
+    "options": ["Venüs", "Merkür", "Mars", "Dünya"],
+    "answer": 1,
+    "note": "Merkür Güneş'e en yakın gezegendir."
+  },
+  {
+    "id": 87,
+    "level": 9,
+    "question": "Türkiye'nin ilk kadın pilotu kimdir?",
+    "options": ["Sabiha Gökçen", "Bedriye Tahir", "Yıldız Uçman", "Leman Bozkurt"],
+    "answer": 1,
+    "note": "Bedriye Tahir 1936'da pilot oldu."
+  },
+  {
+    "id": 88,
+    "level": 9,
+    "question": "Hangi bilim insanı atom teorisini geliştirmiştir?",
+    "options": ["Dalton", "Bohr", "Rutherford", "Thomson"],
+    "answer": 0,
+    "note": "John Dalton modern atom teorisinin kurucusudur."
+  },
+  {
+    "id": 89,
+    "level": 9,
+    "question": "Türkiye'nin en büyük barajı hangisidir?",
+    "options": ["Keban", "Atatürk", "Karakaya", "Birecik"],
+    "answer": 1,
+    "note": "Atatürk Barajı Fırat Nehri üzerindedir."
+  },
+  {
+    "id": 90,
+    "level": 9,
+    "question": "Hangi yıl Cumhuriyet ilan edilmiştir?",
+    "options": ["1920", "1921", "1922", "1923"],
+    "answer": 3,
+    "note": "29 Ekim 1923'te ilan edildi."
+  },
+  {
+    "id": 91,
+    "level": 10,
+    "question": "Türkiye'nin ilk yerli otomobili hangisidir?",
+    "options": ["Devrim", "Anadol", "Karsan", "TOGG"],
+    "answer": 0,
+    "note": "Devrim 1961'de üretildi."
+  },
+  {
+    "id": 92,
+    "level": 10,
+    "question": "Hangi Türk bilim insanı NASA'da çalışmıştır?",
+    "options": ["Aziz Sancar", "Oktay Sinanoğlu", "Cahit Arf", "Feza Gürsey"],
+    "answer": 0,
+    "note": "Aziz Sancar 2015'te Nobel Kimya Ödülü aldı."
+  },
+  {
+    "id": 93,
+    "level": 10,
+    "question": "Hangi yıl Türk Dil Kurumu kurulmuştur?",
+    "options": ["1928", "1932", "1935", "1938"],
+    "answer": 1,
+    "note": "12 Temmuz 1932'de kuruldu."
+  },
+  {
+    "id": 94,
+    "level": 10,
+    "question": "Hangi element periyodik tabloda en ağır doğal elementtir?",
+    "options": ["Uranyum", "Plütonyum", "Toryum", "Radyum"],
+    "answer": 0,
+    "note": "Uranyum atom numarası 92'dir."
+  },
+  {
+    "id": 95,
+    "level": 10,
+    "question": "Türkiye'nin ilk kadın milletvekili kimdir?",
+    "options": ["Halide Edip Adıvar", "Sabiha Gökçen", "Süreyya Ağaoğlu", "Mebrure Gönenç"],
+    "answer": 0,
+    "note": "Halide Edip 1935'te milletvekili seçildi."
+  }
+,
+  {
+    "id": 96,
+    "level": 10,
+    "question": "Hangi Türk besteci 'Alla Turca' marşını bestelemiştir?",
+    "options": ["Mozart", "Beethoven", "Bach", "Vivaldi"],
+    "answer": 0,
+    "note": "Mozart Türk marşından esinlenmiştir."
+  },
+  {
+    "id": 97,
+    "level": 10,
+    "question": "Hangi yıl Türkiye NATO'ya katılmıştır?",
+    "options": ["1949", "1950", "1952", "1955"],
+    "answer": 2,
+    "note": "18 Şubat 1952'de NATO üyesi oldu."
+  },
+  {
+    "id": 98,
+    "level": 10,
+    "question": "Hangi Türk matematikçi 'Arf İnvariantı'nı bulmuştur?",
+    "options": ["Cahit Arf", "Feza Gürsey", "Oktay Sinanoğlu", "Erdal İnönü"],
+    "answer": 0,
+    "note": "Cahit Arf dünyaca ünlü bir matematikçidir."
+  },
+  {
+    "id": 99,
+    "level": 10,
+    "question": "Türkiye'nin en uzun tüneli hangisidir?",
+    "options": ["Bolu Tüneli", "Ovit Tüneli", "Zigana Tüneli", "Sabuncubeli Tüneli"],
+    "answer": 1,
+    "note": "Ovit Tüneli 14.3 km uzunluğundadır."
+  },
+  {
+    "id": 100,
+    "level": 10,
+    "question": "Hangi yıl kadınlara seçme ve seçilme hakkı verilmiştir?",
+    "options": ["1930", "1932", "1934", "1935"],
+    "answer": 2,
+    "note": "1934'te kadınlar milletvekili seçme ve seçilme hakkı kazandı."
+  },
+  {
+    "id": 101,
+    "level": 11,
+    "question": "Türkiye'nin ilk yapay uydusu hangisidir?",
+    "options": ["Türksat 1A", "Türksat 1B", "Türksat 1C", "Göktürk-1"],
+    "answer": 1,
+    "note": "Türksat 1B 1994'te fırlatıldı."
+  },
+  {
+    "id": 102,
+    "level": 11,
+    "question": "Hangi Türk yönetmen 'Kış Uykusu' filmiyle Cannes'da Altın Palmiye kazanmıştır?",
+    "options": ["Yılmaz Güney", "Nuri Bilge Ceylan", "Semih Kaplanoğlu", "Reha Erdem"],
+    "answer": 1,
+    "note": "Nuri Bilge Ceylan 2014'te bu ödülü aldı."
+  },
+  {
+    "id": 103,
+    "level": 11,
+    "question": "Hangi element periyodik tabloda 'Hg' sembolü ile gösterilir?",
+    "options": ["Hidrojen", "Helyum", "Civa", "Hafniyum"],
+    "answer": 2,
+    "note": "Hg, Latince 'Hydrargyrum' kelimesinden gelir."
+  },
+  {
+    "id": 104,
+    "level": 11,
+    "question": "Türkiye'nin ilk milli futbol maçı hangi ülkeye karşı oynanmıştır?",
+    "options": ["Yunanistan", "Romanya", "Bulgaristan", "Macaristan"],
+    "answer": 1,
+    "note": "26 Ekim 1923'te Romanya ile oynandı."
+  },
+  {
+    "id": 105,
+    "level": 11,
+    "question": "Hangi Türk besteci 'Köçekçe' operasını bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Ulvi Cemal Erkin", "Adnan Saygun", "Necil Kazım Akses"],
+    "answer": 0,
+    "note": "Cemal Reşit Rey'in 1943 tarihli eseri."
+  },
+  {
+    "id": 106,
+    "level": 11,
+    "question": "Hangi yıl Türkiye'de çok partili hayata geçilmiştir?",
+    "options": ["1945", "1946", "1950", "1960"],
+    "answer": 1,
+    "note": "1946'da Demokrat Parti kuruldu."
+  },
+  {
+    "id": 107,
+    "level": 11,
+    "question": "Hangi Türk şair 'Sessiz Gemi' şiirini yazmıştır?",
+    "options": ["Yahya Kemal", "Ahmet Haşim", "Tevfik Fikret", "Mehmet Akif"],
+    "answer": 1,
+    "note": "Ahmet Haşim'in sembolist şiiridir."
+  },
+  {
+    "id": 108,
+    "level": 11,
+    "question": "Türkiye'nin en büyük adası hangisidir?",
+    "options": ["Bozcaada", "Gökçeada", "Marmara Adası", "Avşa"],
+    "answer": 1,
+    "note": "Gökçeada 279 km² yüzölçümüne sahiptir."
+  },
+  {
+    "id": 109,
+    "level": 11,
+    "question": "Hangi yıl Türkiye'de ilk radyo yayını başlamıştır?",
+    "options": ["1925", "1927", "1936", "1940"],
+    "answer": 1,
+    "note": "6 Mayıs 1927'de İstanbul Radyosu yayına başladı."
+  },
+  {
+    "id": 110,
+    "level": 11,
+    "question": "Hangi Türk mimar Süleymaniye Camii'ni inşa etmiştir?",
+    "options": ["Mimar Sinan", "Mimar Kemalettin", "Mimar Vedat Tek", "Sedefkar Mehmet Ağa"],
+    "answer": 0,
+    "note": "Mimar Sinan'ın ustalık eseridir."
+  },
+  {
+    "id": 111,
+    "level": 12,
+    "question": "Türkiye'nin ilk kadın belediye başkanı kimdir?",
+    "options": ["Müfide İlhan", "Sadiye Hanım", "Nakiye Elgün", "Fatma Aliye"],
+    "answer": 1,
+    "note": "Sadiye Hanım 1930'da Mersin Belediye Başkanı oldu."
+  },
+  {
+    "id": 112,
+    "level": 12,
+    "question": "Hangi Türk fizikçi 'Gürsey Simetrisi'ni bulmuştur?",
+    "options": ["Cahit Arf", "Feza Gürsey", "Erdal İnönü", "Oktay Sinanoğlu"],
+    "answer": 1,
+    "note": "Feza Gürsey kuark teorisine katkıda bulundu."
+  },
+  {
+    "id": 113,
+    "level": 12,
+    "question": "Hangi yıl Türkiye'de ilk televizyon yayını başlamıştır?",
+    "options": ["1952", "1960", "1968", "1972"],
+    "answer": 2,
+    "note": "31 Ocak 1968'de TRT yayına başladı."
+  },
+  {
+    "id": 114,
+    "level": 12,
+    "question": "Hangi Türk yazar 'Kürk Mantolu Madonna' romanını yazmıştır?",
+    "options": ["Sabahattin Ali", "Orhan Pamuk", "Yaşar Kemal", "Oğuz Atay"],
+    "answer": 0,
+    "note": "Sabahattin Ali'nin 1943 tarihli romanı."
+  },
+  {
+    "id": 115,
+    "level": 12,
+    "question": "Türkiye'nin ilk milli uçağı hangisidir?",
+    "options": ["THK-1", "THK-2", "THK-5", "THK-15"],
+    "answer": 1,
+    "note": "THK-2 1944'te üretildi."
+  },
+  {
+    "id": 116,
+    "level": 12,
+    "question": "Hangi element periyodik tabloda 'Pb' sembolü ile gösterilir?",
+    "options": ["Platin", "Kurşun", "Paladyum", "Polonyum"],
+    "answer": 1,
+    "note": "Pb, Latince 'Plumbum' kelimesinden gelir."
+  },
+  {
+    "id": 117,
+    "level": 12,
+    "question": "Türkiye'nin ilk kadın valisi kimdir?",
+    "options": ["Lale Aytaman", "Cahide Tamer", "Nazan Öncel", "Işılay Saygın"],
+    "answer": 0,
+    "note": "Lale Aytaman 1991'de Muğla valisi oldu."
+  },
+  {
+    "id": 118,
+    "level": 12,
+    "question": "Hangi Türk besteci 'Yunus Emre Oratoryosu'nu bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 1,
+    "note": "Adnan Saygun'un 1946 tarihli eseri."
+  },
+  {
+    "id": 119,
+    "level": 12,
+    "question": "Türkiye'nin en derin gölü hangisidir?",
+    "options": ["Van Gölü", "Beyşehir Gölü", "Eğirdir Gölü", "İznik Gölü"],
+    "answer": 0,
+    "note": "Van Gölü 451 metre derinliğindedir."
+  },
+  {
+    "id": 120,
+    "level": 12,
+    "question": "Hangi yıl Türkiye'de ilk metro hattı açılmıştır?",
+    "options": ["1989", "1992", "2000", "2005"],
+    "answer": 0,
+    "note": "İstanbul M1 hattı 1989'da açıldı."
+  },
+  {
+    "id": 121,
+    "level": 13,
+    "question": "Türkiye'nin ilk kadın büyükelçisi kimdir?",
+    "options": ["Filiz Dinçmen", "Şükran Özkaya", "Melih Esenbel", "Günseli Özkaya"],
+    "answer": 0,
+    "note": "Filiz Dinçmen 1991'de büyükelçi oldu."
+  },
+  {
+    "id": 122,
+    "level": 13,
+    "question": "Hangi Türk yönetmen 'Bal' filmiyle Berlin'de Altın Ayı kazanmıştır?",
+    "options": ["Nuri Bilge Ceylan", "Semih Kaplanoğlu", "Zeki Demirkubuz", "Reha Erdem"],
+    "answer": 1,
+    "note": "Semih Kaplanoğlu 2010'da bu ödülü aldı."
+  },
+  {
+    "id": 123,
+    "level": 13,
+    "question": "Türkiye'nin ilk nükleer reaktörü hangi üniversitede kurulmuştur?",
+    "options": ["İTÜ", "ODTÜ", "Boğaziçi", "Hacettepe"],
+    "answer": 0,
+    "note": "İTÜ Triga Mark II reaktörü 1979'da kuruldu."
+  },
+  {
+    "id": 124,
+    "level": 13,
+    "question": "Hangi Türk şair 'Garip' akımının kurucusudur?",
+    "options": ["Nazım Hikmet", "Orhan Veli", "Necip Fazıl", "Cahit Sıtkı"],
+    "answer": 1,
+    "note": "Orhan Veli, Oktay Rifat ve Melih Cevdet Garip'i kurdu."
+  },
+  {
+    "id": 125,
+    "level": 13,
+    "question": "Türkiye'nin en yüksek şelalesi hangisidir?",
+    "options": ["Tortum Şelalesi", "Muradiye Şelalesi", "Kapuzbaşı Şelalesi", "Düden Şelalesi"],
+    "answer": 0,
+    "note": "Tortum Şelalesi 48 metre yüksekliğindedir."
+  },
+  {
+    "id": 126,
+    "level": 13,
+    "question": "Hangi element periyodik tabloda 'W' sembolü ile gösterilir?",
+    "options": ["Vanadyum", "Tungsten", "Wolfram", "Uranyum"],
+    "answer": 2,
+    "note": "W, Almanca 'Wolfram' kelimesinden gelir."
+  },
+  {
+    "id": 127,
+    "level": 13,
+    "question": "Türkiye'nin ilk kadın rektörü kimdir?",
+    "options": ["Türkan Saylan", "Halide Edip", "Fatma Aliye", "Remziye Hisar"],
+    "answer": 3,
+    "note": "Remziye Hisar 1950'de İstanbul Üniversitesi Eczacılık Fakültesi rektörü oldu."
+  },
+  {
+    "id": 128,
+    "level": 13,
+    "question": "Hangi Türk besteci 'Köroğlu Operası'nı bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 2,
+    "note": "Ulvi Cemal Erkin'in 1944 tarihli eseri."
+  },
+  {
+    "id": 129,
+    "level": 13,
+    "question": "Türkiye'nin en büyük yarımadası hangisidir?",
+    "options": ["Gelibolu", "Datça", "Bodrum", "Anadolu"],
+    "answer": 3,
+    "note": "Anadolu yarımadası Türkiye'nin büyük kısmını oluşturur."
+  },
+  {
+    "id": 130,
+    "level": 13,
+    "question": "Hangi yıl Türkiye'de ilk internet bağlantısı kurulmuştur?",
+    "options": ["1987", "1991", "1993", "1996"],
+    "answer": 2,
+    "note": "12 Nisan 1993'te ODTÜ'den ilk bağlantı yapıldı."
+  },
+  {
+    "id": 131,
+    "level": 14,
+    "question": "Türkiye'nin ilk kadın hâkimi kimdir?",
+    "options": ["Süreyya Ağaoğlu", "Mebrure Gönenç", "Sabiha Gökçen", "Halide Edip"],
+    "answer": 0,
+    "note": "Süreyya Ağaoğlu 1933'te hâkim oldu."
+  },
+  {
+    "id": 132,
+    "level": 14,
+    "question": "Hangi Türk fizikçi 'Sinanoğlu Teorisi'ni geliştirmiştir?",
+    "options": ["Feza Gürsey", "Oktay Sinanoğlu", "Erdal İnönü", "Cahit Arf"],
+    "answer": 1,
+    "note": "Oktay Sinanoğlu moleküler biyolojiye katkıda bulundu."
+  },
+  {
+    "id": 133,
+    "level": 14,
+    "question": "Türkiye'nin ilk yerli helikopteri hangisidir?",
+    "options": ["Gökbey", "Atak", "Hürkuş", "Anka"],
+    "answer": 0,
+    "note": "Gökbey TAI tarafından geliştirildi."
+  },
+  {
+    "id": 134,
+    "level": 14,
+    "question": "Hangi Türk yazar 'Huzur' romanını yazmıştır?",
+    "options": ["Ahmet Hamdi Tanpınar", "Yakup Kadri", "Halide Edip", "Reşat Nuri"],
+    "answer": 0,
+    "note": "Tanpınar'ın 1949 tarihli romanı."
+  },
+  {
+    "id": 135,
+    "level": 14,
+    "question": "Türkiye'nin en uzun köprüsü hangisidir?",
+    "options": ["Boğaziçi Köprüsü", "Fatih Sultan Mehmet Köprüsü", "Yavuz Sultan Selim Köprüsü", "1915 Çanakkale Köprüsü"],
+    "answer": 3,
+    "note": "Çanakkale Köprüsü 2.023 metre ana açıklığa sahiptir."
+  },
+  {
+    "id": 136,
+    "level": 14,
+    "question": "Hangi element periyodik tabloda 'Pt' sembolü ile gösterilir?",
+    "options": ["Plütonyum", "Potasyum", "Platin", "Polonyum"],
+    "answer": 2,
+    "note": "Platin değerli bir metaldir."
+  },
+  {
+    "id": 137,
+    "level": 14,
+    "question": "Türkiye'nin ilk kadın müftüsü kimdir?",
+    "options": ["Fatma Bayram", "Ayşe Hümeyra", "Zeynep Özcan", "Hacer Bayram"],
+    "answer": 0,
+    "note": "Fatma Bayram 2017'de müftü oldu."
+  },
+  {
+    "id": 138,
+    "level": 14,
+    "question": "Hangi Türk besteci 'Bayati' senfonisini bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 3,
+    "note": "Necil Kazım Akses'in 1943 tarihli eseri."
+  },
+  {
+    "id": 139,
+    "level": 14,
+    "question": "Türkiye'nin en büyük mağarası hangisidir?",
+    "options": ["Ballıca Mağarası", "Altınbeşik Mağarası", "Dupnisa Mağarası", "Karain Mağarası"],
+    "answer": 1,
+    "note": "Altınbeşik yeraltı gölüyle ünlüdür."
+  },
+  {
+    "id": 140,
+    "level": 14,
+    "question": "Hangi yıl Türkiye'de ilk özel televizyon kanalı yayına başlamıştır?",
+    "options": ["1989", "1990", "1992", "1994"],
+    "answer": 1,
+    "note": "Star TV 1990'da yayına başladı."
+  },
+  {
+    "id": 141,
+    "level": 15,
+    "question": "Türkiye'nin ilk kadın büyükelçisi hangi ülkeye atanmıştır?",
+    "options": ["Hollanda", "İsveç", "Danimarka", "Norveç"],
+    "answer": 0,
+    "note": "Filiz Dinçmen 1991'de Lahey Büyükelçisi oldu."
+  },
+  {
+    "id": 142,
+    "level": 15,
+    "question": "Hangi Türk matematikçi 'Arf Halkaları' teorisini geliştirmiştir?",
+    "options": ["Cahit Arf", "Feza Gürsey", "Tosun Terzioğlu", "Ali Nesin"],
+    "answer": 0,
+    "note": "Cahit Arf cebir alanında önemli katkılarda bulundu."
+  },
+  {
+    "id": 143,
+    "level": 15,
+    "question": "Türkiye'nin ilk yerli savaş uçağı hangisidir?",
+    "options": ["F-16", "Hürkuş", "Hürjet", "TF-X"],
+    "answer": 2,
+    "note": "Hürjet ileri jet eğitim uçağıdır."
+  },
+  {
+    "id": 144,
+    "level": 15,
+    "question": "Hangi Türk şair 'Piraye'ye Mektuplar' eserini yazmıştır?",
+    "options": ["Nazım Hikmet", "Orhan Veli", "Oktay Rifat", "Melih Cevdet"],
+    "answer": 0,
+    "note": "Nazım Hikmet'in aşk mektuplarıdır."
+  },
+  {
+    "id": 145,
+    "level": 15,
+    "question": "Türkiye'nin en büyük doğal gölü hangisidir?",
+    "options": ["Van Gölü", "Tuz Gölü", "Beyşehir Gölü", "Eğirdir Gölü"],
+    "answer": 0,
+    "note": "Van Gölü 3.713 km² yüzölçümüne sahiptir."
+  }
+,
+  {
+    "id": 146,
+    "level": 1,
+    "question": "Hangi mevsim en sıcaktır?",
+    "options": ["İlkbahar", "Yaz", "Sonbahar", "Kış"],
+    "answer": 1,
+    "note": "Yaz mevsimi en sıcak mevsimdir."
+  },
+  {
+    "id": 147,
+    "level": 1,
+    "question": "Hangi hayvan havlar?",
+    "options": ["Kedi", "Köpek", "Kuş", "At"],
+    "answer": 1,
+    "note": "Köpekler havlayarak iletişim kurar."
+  },
+  {
+    "id": 148,
+    "level": 1,
+    "question": "Hangi renk ateşi simgeler?",
+    "options": ["Mavi", "Yeşil", "Kırmızı", "Sarı"],
+    "answer": 2,
+    "note": "Kırmızı ateş ve sıcaklığı temsil eder."
+  },
+  {
+    "id": 149,
+    "level": 1,
+    "question": "Bir günde kaç saat vardır?",
+    "options": ["12", "18", "24", "36"],
+    "answer": 2,
+    "note": "Bir gün 24 saatten oluşur."
+  },
+  {
+    "id": 150,
+    "level": 1,
+    "question": "Hangi hayvan yumurtlar?",
+    "options": ["Köpek", "Kedi", "Tavuk", "İnek"],
+    "answer": 2,
+    "note": "Tavuklar yumurtlayan hayvanlardır."
+  },
+  {
+    "id": 151,
+    "level": 2,
+    "question": "Türkiye'nin plaka kodu kaçtır?",
+    "options": ["90", "TR", "TUR", "Hepsi"],
+    "answer": 1,
+    "note": "Araç plakalarında TR kodu kullanılır."
+  },
+  {
+    "id": 152,
+    "level": 2,
+    "question": "Hangi gezegen halkalı yapısıyla ünlüdür?",
+    "options": ["Mars", "Jüpiter", "Satürn", "Uranüs"],
+    "answer": 2,
+    "note": "Satürn'ün belirgin halkaları vardır."
+  },
+  {
+    "id": 153,
+    "level": 2,
+    "question": "Bir yılda kaç mevsim vardır?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 2,
+    "note": "İlkbahar, yaz, sonbahar, kış."
+  },
+  {
+    "id": 154,
+    "level": 2,
+    "question": "Hangi organ vücutta sindirim yapar?",
+    "options": ["Kalp", "Akciğer", "Mide", "Beyin"],
+    "answer": 2,
+    "note": "Mide sindirim sisteminin önemli bir parçasıdır."
+  },
+  {
+    "id": 155,
+    "level": 2,
+    "question": "Türkiye'nin para birimi nedir?",
+    "options": ["Dolar", "Euro", "Lira", "Sterlin"],
+    "answer": 2,
+    "note": "Türk Lirası resmi para birimidir."
+  },
+  {
+    "id": 156,
+    "level": 3,
+    "question": "Hangi şehir 'Mevlana'nın şehri' olarak bilinir?",
+    "options": ["Ankara", "Konya", "Kayseri", "Sivas"],
+    "answer": 1,
+    "note": "Mevlana Konya'da yaşamış ve orada türbesi bulunur."
+  },
+  {
+    "id": 157,
+    "level": 3,
+    "question": "Hangi element suyun donma noktasını belirler?",
+    "options": ["Sıcaklık", "Basınç", "Nem", "Rüzgar"],
+    "answer": 0,
+    "note": "0°C'de su donar."
+  },
+  {
+    "id": 158,
+    "level": 3,
+    "question": "Türkiye'nin en büyük ovası hangisidir?",
+    "options": ["Çukurova", "Konya Ovası", "Ege Ovası", "Trakya Ovası"],
+    "answer": 1,
+    "note": "Konya Ovası yaklaşık 10.000 km²'dir."
+  },
+  {
+    "id": 159,
+    "level": 3,
+    "question": "Hangi hayvan en uzun boyunludur?",
+    "options": ["Fil", "Zürafa", "Deve", "At"],
+    "answer": 1,
+    "note": "Zürafalar 5-6 metre boyunda olabilir."
+  },
+  {
+    "id": 160,
+    "level": 3,
+    "question": "Bir dikdörtgenin alanı nasıl hesaplanır?",
+    "options": ["Uzunluk + Genişlik", "Uzunluk × Genişlik", "2 × (Uzunluk + Genişlik)", "Uzunluk ÷ Genişlik"],
+    "answer": 1,
+    "note": "Alan = uzunluk × genişlik"
+  },
+  {
+    "id": 161,
+    "level": 4,
+    "question": "Türkiye'nin ilk kadın avukatı kimdir?",
+    "options": ["Süreyya Ağaoğlu", "Sabiha Zekeriya Sertel", "Halide Edip", "Nezihe Muhiddin"],
+    "answer": 0,
+    "note": "Süreyya Ağaoğlu 1928'de avukat oldu."
+  },
+  {
+    "id": 162,
+    "level": 4,
+    "question": "Hangi Türk ressam 'Kaplumbağa Terbiyecisi' tablosunu yapmıştır?",
+    "options": ["Osman Hamdi Bey", "Şeker Ahmet Paşa", "Halil Paşa", "Süleyman Seyyid"],
+    "answer": 0,
+    "note": "Osman Hamdi Bey'in 1906 tarihli eseri."
+  },
+  {
+    "id": 163,
+    "level": 4,
+    "question": "Türkiye'nin en büyük limanı hangisidir?",
+    "options": ["İzmir", "İstanbul", "Mersin", "Samsun"],
+    "answer": 2,
+    "note": "Mersin Limanı en büyük konteyner limanıdır."
+  },
+  {
+    "id": 164,
+    "level": 4,
+    "question": "Hangi yıl Türkiye'de kadınlara belediye seçme hakkı verilmiştir?",
+    "options": ["1930", "1933", "1934", "1935"],
+    "answer": 0,
+    "note": "1930'da yerel seçimlerde oy kullanma hakkı verildi."
+  },
+  {
+    "id": 165,
+    "level": 4,
+    "question": "Hangi Türk müzisyen 'Gülpembe' şarkısını seslendirmiştir?",
+    "options": ["Barış Manço", "Cem Karaca", "Erkin Koray", "Edip Akbayram"],
+    "answer": 0,
+    "note": "Barış Manço'nun 1985 tarihli şarkısı."
+  },
+  {
+    "id": 166,
+    "level": 5,
+    "question": "Türkiye'nin ilk milli gemisi hangisidir?",
+    "options": ["Nusret", "Hamidiye", "Mecidiye", "Barbaros"],
+    "answer": 1,
+    "note": "Hamidiye Balkan Savaşları'nda ünlendi."
+  },
+  {
+    "id": 167,
+    "level": 5,
+    "question": "Hangi Türk yazar 'Sinekli Bakkal' romanını yazmıştır?",
+    "options": ["Halide Edip Adıvar", "Reşat Nuri Güntekin", "Yakup Kadri Karaosmanoğlu", "Peyami Safa"],
+    "answer": 0,
+    "note": "Halide Edip'in 1936 tarihli romanı."
+  },
+  {
+    "id": 168,
+    "level": 5,
+    "question": "Türkiye'nin en büyük şelalesi hangisidir?",
+    "options": ["Tortum", "Muradiye", "Düden", "Manavgat"],
+    "answer": 3,
+    "note": "Manavgat Şelalesi en geniş şelaledir."
+  },
+  {
+    "id": 169,
+    "level": 5,
+    "question": "Hangi element periyodik tabloda 'Na' sembolü ile gösterilir?",
+    "options": ["Neon", "Nikel", "Sodyum", "Azot"],
+    "answer": 2,
+    "note": "Na, Latince 'Natrium' kelimesinden gelir."
+  },
+  {
+    "id": 170,
+    "level": 5,
+    "question": "Türkiye'nin ilk kadın doktoru kimdir?",
+    "options": ["Safiye Ali", "Fatma Aliye", "Halide Edip", "Sabiha Gökçen"],
+    "answer": 0,
+    "note": "Safiye Ali 1922'de doktor oldu."
+  },
+  {
+    "id": 171,
+    "level": 6,
+    "question": "Hangi Türk besteci 'Kerem' operasını bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 1,
+    "note": "Adnan Saygun'un 1953 tarihli eseri."
+  },
+  {
+    "id": 172,
+    "level": 6,
+    "question": "Türkiye'nin en büyük deltası hangisidir?",
+    "options": ["Kızılırmak", "Gediz", "Büyük Menderes", "Çoruh"],
+    "answer": 0,
+    "note": "Kızılırmak Deltası Karadeniz'e dökülür."
+  },
+  {
+    "id": 173,
+    "level": 6,
+    "question": "Hangi yıl Türkiye'de ilk sinema filmi çekilmiştir?",
+    "options": ["1914", "1917", "1922", "1923"],
+    "answer": 1,
+    "note": "1917'de 'Pençe' filmi çekildi."
+  },
+  {
+    "id": 174,
+    "level": 6,
+    "question": "Hangi Türk yazar 'Çalıkuşu' romanını yazmıştır?",
+    "options": ["Halide Edip", "Reşat Nuri Güntekin", "Yakup Kadri", "Peyami Safa"],
+    "answer": 1,
+    "note": "Reşat Nuri'nin 1922 tarihli romanı."
+  },
+  {
+    "id": 175,
+    "level": 6,
+    "question": "Türkiye'nin en yüksek barajı hangisidir?",
+    "options": ["Deriner", "Atatürk", "Keban", "Karakaya"],
+    "answer": 0,
+    "note": "Deriner Barajı 249 metre yüksekliğindedir."
+  },
+  {
+    "id": 176,
+    "level": 7,
+    "question": "Hangi Türk mimar Selimiye Camii'ni inşa etmiştir?",
+    "options": ["Mimar Sinan", "Mimar Kemalettin", "Sedefkar Mehmet Ağa", "Mimar Vedat Tek"],
+    "answer": 0,
+    "note": "Mimar Sinan'ın şaheseridir."
+  },
+  {
+    "id": 177,
+    "level": 7,
+    "question": "Türkiye'nin ilk kadın şairi kimdir?",
+    "options": ["Mihri Hatun", "Fitnat Hanım", "Leyla Hanım", "Nigâr Hanım"],
+    "answer": 0,
+    "note": "Mihri Hatun 15. yüzyılda yaşamıştır."
+  },
+  {
+    "id": 178,
+    "level": 7,
+    "question": "Hangi element periyodik tabloda 'K' sembolü ile gösterilir?",
+    "options": ["Kalsiyum", "Karbon", "Potasyum", "Kripton"],
+    "answer": 2,
+    "note": "K, Latince 'Kalium' kelimesinden gelir."
+  },
+  {
+    "id": 179,
+    "level": 7,
+    "question": "Türkiye'nin en büyük yarımadası hangisidir?",
+    "options": ["Gelibolu", "Datça", "Bodrum", "Karaburun"],
+    "answer": 0,
+    "note": "Gelibolu Yarımadası tarihi öneme sahiptir."
+  },
+  {
+    "id": 180,
+    "level": 7,
+    "question": "Hangi yıl Türkiye'de ilk tiyatro oyunu sergilenmiştir?",
+    "options": ["1860", "1870", "1880", "1890"],
+    "answer": 0,
+    "note": "1860'ta Güllü Agop tiyatrosu kuruldu."
+  },
+  {
+    "id": 181,
+    "level": 8,
+    "question": "Türkiye'nin ilk kadın ressamı kimdir?",
+    "options": ["Mihri Müşfik", "Fahrelnissa Zeid", "Aliye Berger", "Müfide Kadri"],
+    "answer": 0,
+    "note": "Mihri Müşfik 19. yüzyılda yaşadı."
+  },
+  {
+    "id": 182,
+    "level": 8,
+    "question": "Hangi Türk besteci 'Kâtibim' türküsünü derlemiştir?",
+    "options": ["Muzaffer Sarısözen", "Nida Tüfekçi", "Ruhi Su", "Neşet Ertaş"],
+    "answer": 0,
+    "note": "Muzaffer Sarısözen binlerce türkü derledi."
+  },
+  {
+    "id": 183,
+    "level": 8,
+    "question": "Türkiye'nin en büyük kanyonu hangisidir?",
+    "options": ["Saklıkent", "Köprülü", "Ihlara", "Ulubey"],
+    "answer": 3,
+    "note": "Ulubey Kanyonu 170 km uzunluğundadır."
+  },
+  {
+    "id": 184,
+    "level": 8,
+    "question": "Hangi yıl Türkiye'de ilk gazete yayınlanmıştır?",
+    "options": ["1831", "1840", "1860", "1876"],
+    "answer": 0,
+    "note": "Takvim-i Vekayi 1831'de yayınlandı."
+  },
+  {
+    "id": 185,
+    "level": 8,
+    "question": "Hangi Türk yazar 'Beyaz Kale' romanını yazmıştır?",
+    "options": ["Orhan Pamuk", "Yaşar Kemal", "Oğuz Atay", "Sabahattin Ali"],
+    "answer": 0,
+    "note": "Orhan Pamuk'un 1985 tarihli romanı."
+  },
+  {
+    "id": 186,
+    "level": 9,
+    "question": "Türkiye'nin ilk kadın müzisyeni kimdir?",
+    "options": ["Leyla Gencer", "Semiha Berksoy", "Safiye Ayla", "Müzeyyen Senar"],
+    "answer": 1,
+    "note": "Semiha Berksoy opera sanatçısıdır."
+  },
+  {
+    "id": 187,
+    "level": 9,
+    "question": "Hangi Türk mimar Anıtkabir'i tasarlamıştır?",
+    "options": ["Mimar Sinan", "Emin Onat", "Mimar Kemalettin", "Vedat Tek"],
+    "answer": 1,
+    "note": "Emin Onat ve Orhan Arda tarafından tasarlandı."
+  },
+  {
+    "id": 188,
+    "level": 9,
+    "question": "Türkiye'nin en büyük milli parkı hangisidir?",
+    "options": ["Yozgat Çamlığı", "Munzur Vadisi", "Kaçkar Dağları", "Nemrut"],
+    "answer": 1,
+    "note": "Munzur Vadisi 42.000 hektar alana sahiptir."
+  },
+  {
+    "id": 189,
+    "level": 9,
+    "question": "Hangi element periyodik tabloda 'Sn' sembolü ile gösterilir?",
+    "options": ["Silisyum", "Kalay", "Stronsiyum", "Sezyum"],
+    "answer": 1,
+    "note": "Sn, Latince 'Stannum' kelimesinden gelir."
+  },
+  {
+    "id": 190,
+    "level": 9,
+    "question": "Türkiye'nin ilk kadın pilotu kimdir?",
+    "options": ["Sabiha Gökçen", "Bedriye Tahir", "Yıldız Uçman", "Leman Bozkurt"],
+    "answer": 1,
+    "note": "Bedriye Tahir 1936'da sivil pilot oldu."
+  },
+  {
+    "id": 191,
+    "level": 10,
+    "question": "Hangi Türk yazar 'Serenad' romanını yazmıştır?",
+    "options": ["Zülfü Livaneli", "Ahmet Ümit", "Orhan Pamuk", "Elif Şafak"],
+    "answer": 0,
+    "note": "Zülfü Livaneli'nin 2011 tarihli romanı."
+  },
+  {
+    "id": 192,
+    "level": 10,
+    "question": "Türkiye'nin en büyük gölü olan Van Gölü'nün yüzölçümü yaklaşık kaç km²'dir?",
+    "options": ["2.500", "3.700", "5.000", "7.000"],
+    "answer": 1,
+    "note": "Van Gölü 3.713 km² yüzölçümüne sahiptir."
+  },
+  {
+    "id": 193,
+    "level": 10,
+    "question": "Hangi Türk besteci 'Concerto' eserini bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 2,
+    "note": "Ulvi Cemal Erkin'in keman konçertosu."
+  },
+  {
+    "id": 194,
+    "level": 10,
+    "question": "Türkiye'nin en uzun plajı hangisidir?",
+    "options": ["Patara", "İztuzu", "Kızkalesi", "Altınkum"],
+    "answer": 0,
+    "note": "Patara Plajı 18 km uzunluğundadır."
+  },
+  {
+    "id": 195,
+    "level": 10,
+    "question": "Hangi yıl Türkiye'de ilk banka kurulmuştur?",
+    "options": ["1847", "1856", "1863", "1875"],
+    "answer": 2,
+    "note": "Osmanlı Bankası 1863'te kuruldu."
+  },
+  {
+    "id": 196,
+    "level": 11,
+    "question": "Türkiye'nin ilk kadın mühendisi kimdir?",
+    "options": ["Sabiha Rıfat Gürayman", "Suat Seren", "Mükerrem Sarol", "Türkan Akyol"],
+    "answer": 0,
+    "note": "Sabiha Rıfat 1928'de mühendis oldu."
+  },
+  {
+    "id": 197,
+    "level": 11,
+    "question": "Hangi Türk yönetmen 'Uzak' filmiyle Cannes'da ödül kazanmıştır?",
+    "options": ["Yılmaz Güney", "Nuri Bilge Ceylan", "Semih Kaplanoğlu", "Zeki Demirkubuz"],
+    "answer": 1,
+    "note": "Nuri Bilge Ceylan 2003'te En İyi Erkek Oyuncu ödülü aldı."
+  },
+  {
+    "id": 198,
+    "level": 11,
+    "question": "Türkiye'nin en büyük yaylası hangisidir?",
+    "options": ["Gümüşhane Yaylası", "Ayder Yaylası", "Yedigöller", "Çambaşı Yaylası"],
+    "answer": 3,
+    "note": "Çambaşı Yaylası 3.000 metre yüksekliğindedir."
+  },
+  {
+    "id": 199,
+    "level": 11,
+    "question": "Hangi element periyodik tabloda 'Cu' sembolü ile gösterilir?",
+    "options": ["Kalsiyum", "Bakır", "Kobalt", "Krom"],
+    "answer": 1,
+    "note": "Cu, Latince 'Cuprum' kelimesinden gelir."
+  },
+  {
+    "id": 200,
+    "level": 11,
+    "question": "Türkiye'nin ilk kadın gazetecisi kimdir?",
+    "options": ["Selma Rıza", "Fatma Aliye", "Halide Edip", "Sabiha Sertel"],
+    "answer": 0,
+    "note": "Selma Rıza 1870'lerde gazetecilik yaptı."
+  }
+,
+  {
+    "id": 201,
+    "level": 12,
+    "question": "Hangi Türk besteci 'Divertimento' eserini bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 0,
+    "note": "Cemal Reşit Rey'in orkestra eseri."
+  },
+  {
+    "id": 202,
+    "level": 12,
+    "question": "Türkiye'nin en büyük krater gölü hangisidir?",
+    "options": ["Meke Gölü", "Nemrut Krater Gölü", "Acıgöl", "Narlıgöl"],
+    "answer": 1,
+    "note": "Nemrut Krater Gölü Bitlis'tedir."
+  },
+  {
+    "id": 203,
+    "level": 12,
+    "question": "Hangi Türk yazar 'Saatleri Ayarlama Enstitüsü' romanını yazmıştır?",
+    "options": ["Oğuz Atay", "Ahmet Hamdi Tanpınar", "Orhan Pamuk", "Yaşar Kemal"],
+    "answer": 1,
+    "note": "Tanpınar'ın 1954 tarihli romanı."
+  },
+  {
+    "id": 204,
+    "level": 12,
+    "question": "Türkiye'nin ilk kadın heykeltraşı kimdir?",
+    "options": ["Sabiha Bengütaş", "Zerrin Bölükbaşı", "Füreya Koral", "Aliye Berger"],
+    "answer": 0,
+    "note": "Sabiha Bengütaş 1930'larda eserler verdi."
+  },
+  {
+    "id": 205,
+    "level": 12,
+    "question": "Hangi yıl Türkiye'de ilk opera gösterimi yapılmıştır?",
+    "options": ["1934", "1940", "1948", "1950"],
+    "answer": 0,
+    "note": "1934'te Ankara'da ilk opera sahnelendi."
+  },
+  {
+    "id": 206,
+    "level": 13,
+    "question": "Türkiye'nin ilk kadın senatörü kimdir?",
+    "options": ["Mebrure Gönenç", "Nakiye Elgün", "Sabiha Gökçen", "Türkan Akyol"],
+    "answer": 1,
+    "note": "Nakiye Elgün 1961'de senatör oldu."
+  },
+  {
+    "id": 207,
+    "level": 13,
+    "question": "Hangi Türk fizikçi 'İnönü Rezonansı'nı bulmuştur?",
+    "options": ["Feza Gürsey", "Erdal İnönü", "Oktay Sinanoğlu", "Cahit Arf"],
+    "answer": 1,
+    "note": "Erdal İnönü plazma fiziğine katkıda bulundu."
+  },
+  {
+    "id": 208,
+    "level": 13,
+    "question": "Türkiye'nin en büyük mağara sistemi hangisidir?",
+    "options": ["Ballıca", "Altınbeşik", "Dupnisa", "Dim Mağarası"],
+    "answer": 2,
+    "note": "Dupnisa 2.720 metre uzunluğundadır."
+  },
+  {
+    "id": 209,
+    "level": 13,
+    "question": "Hangi Türk yazar 'Bereketli Topraklar Üzerinde' romanını yazmıştır?",
+    "options": ["Orhan Kemal", "Yaşar Kemal", "Fakir Baykurt", "Kemal Tahir"],
+    "answer": 0,
+    "note": "Orhan Kemal'in 1954 tarihli romanı."
+  },
+  {
+    "id": 210,
+    "level": 13,
+    "question": "Türkiye'nin ilk kadın orkestra şefi kimdir?",
+    "options": ["Gürer Aykal", "Hikmet Şimşek", "Rengim Gökmen", "Cem Mansur"],
+    "answer": 2,
+    "note": "Rengim Gökmen 1980'lerde şeflik yaptı."
+  },
+  {
+    "id": 211,
+    "level": 14,
+    "question": "Hangi Türk besteci 'Senfoni No. 2' eserini bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 1,
+    "note": "Adnan Saygun'un 1958 tarihli eseri."
+  },
+  {
+    "id": 212,
+    "level": 14,
+    "question": "Türkiye'nin en büyük buzulu hangisidir?",
+    "options": ["Cilo Buzulu", "Ağrı Buzulu", "Süphan Buzulu", "Erciyes Buzulu"],
+    "answer": 0,
+    "note": "Cilo Buzulu Hakkari'dedir."
+  },
+  {
+    "id": 213,
+    "level": 14,
+    "question": "Hangi Türk yazar 'Yorgun Savaşçı' romanını yazmıştır?",
+    "options": ["Kemal Tahir", "Yaşar Kemal", "Orhan Kemal", "Fakir Baykurt"],
+    "answer": 0,
+    "note": "Kemal Tahir'in 1965 tarihli romanı."
+  },
+  {
+    "id": 214,
+    "level": 14,
+    "question": "Türkiye'nin ilk kadın opera sanatçısı kimdir?",
+    "options": ["Leyla Gencer", "Semiha Berksoy", "Ayhan Aydan", "Gülnur Şahin"],
+    "answer": 1,
+    "note": "Semiha Berksoy 1930'larda sahneye çıktı."
+  },
+  {
+    "id": 215,
+    "level": 14,
+    "question": "Hangi yıl Türkiye'de ilk bale gösterimi yapılmıştır?",
+    "options": ["1934", "1940", "1948", "1950"],
+    "answer": 2,
+    "note": "1948'de Ankara'da ilk bale sahnelendi."
+  },
+  {
+    "id": 216,
+    "level": 15,
+    "question": "Türkiye'nin ilk kadın astronot adayı kimdir?",
+    "options": ["Tuva Cihangir Atasever", "Ayşe Yıldız", "Elif Kara", "Zeynep Demir"],
+    "answer": 0,
+    "note": "Tuva Cihangir Atasever 2023'te seçildi."
+  },
+  {
+    "id": 217,
+    "level": 15,
+    "question": "Hangi Türk matematikçi 'Tosun Terzioğlu Teoremi'ni geliştirmiştir?",
+    "options": ["Cahit Arf", "Tosun Terzioğlu", "Ali Nesin", "Feza Gürsey"],
+    "answer": 1,
+    "note": "Tosun Terzioğlu fonksiyonel analizde çalıştı."
+  },
+  {
+    "id": 218,
+    "level": 15,
+    "question": "Türkiye'nin en büyük yeraltı şehri hangisidir?",
+    "options": ["Kaymaklı", "Derinkuyu", "Özkonak", "Mazı"],
+    "answer": 1,
+    "note": "Derinkuyu 85 metre derinliğindedir."
+  },
+  {
+    "id": 219,
+    "level": 15,
+    "question": "Hangi Türk yazar 'Bir Düğün Gecesi' romanını yazmıştır?",
+    "options": ["Adalet Ağaoğlu", "Sevgi Soysal", "Füruzan", "Leyla Erbil"],
+    "answer": 0,
+    "note": "Adalet Ağaoğlu'nun 1979 tarihli romanı."
+  },
+  {
+    "id": 220,
+    "level": 15,
+    "question": "Türkiye'nin ilk kadın büyükelçisi hangi yıl atanmıştır?",
+    "options": ["1988", "1991", "1995", "2000"],
+    "answer": 1,
+    "note": "Filiz Dinçmen 1991'de atandı."
+  },
+  {
+    "id": 221,
+    "level": 1,
+    "question": "Hangi hayvan sütünden peynir yapılır?",
+    "options": ["Tavuk", "İnek", "Balık", "Kuş"],
+    "answer": 1,
+    "note": "İnek sütü peynir yapımında kullanılır."
+  },
+  {
+    "id": 222,
+    "level": 1,
+    "question": "Kar hangi mevsimde yağar?",
+    "options": ["Yaz", "İlkbahar", "Sonbahar", "Kış"],
+    "answer": 3,
+    "note": "Kış mevsimi kar yağışının olduğu dönemdir."
+  },
+  {
+    "id": 223,
+    "level": 1,
+    "question": "Hangi araç havada uçar?",
+    "options": ["Araba", "Gemi", "Uçak", "Tren"],
+    "answer": 2,
+    "note": "Uçaklar havada uçan araçlardır."
+  },
+  {
+    "id": 224,
+    "level": 1,
+    "question": "Hangi meyve sarı renklidir ve maymunların sevdiği bilinir?",
+    "options": ["Elma", "Muz", "Portakal", "Üzüm"],
+    "answer": 1,
+    "note": "Muz maymunların favori meyvesidir."
+  },
+  {
+    "id": 225,
+    "level": 1,
+    "question": "Hangi organ düşünmemizi sağlar?",
+    "options": ["Kalp", "Beyin", "Mide", "Akciğer"],
+    "answer": 1,
+    "note": "Beyin düşünce ve hafıza merkezidir."
+  },
+  {
+    "id": 226,
+    "level": 2,
+    "question": "Türkiye'nin denizi olmayan ili hangisidir?",
+    "options": ["Ankara", "İzmir", "Antalya", "Muğla"],
+    "answer": 0,
+    "note": "Ankara iç bölgede yer alır."
+  },
+  {
+    "id": 227,
+    "level": 2,
+    "question": "Hangi hayvan en büyük deniz memelisidir?",
+    "options": ["Köpekbalığı", "Yunus", "Mavi Balina", "Fok"],
+    "answer": 2,
+    "note": "Mavi balina 30 metre uzunluğa ulaşabilir."
+  },
+  {
+    "id": 228,
+    "level": 2,
+    "question": "Bir dairenin merkezinden kenara olan uzaklığa ne denir?",
+    "options": ["Çap", "Yarıçap", "Çevre", "Alan"],
+    "answer": 1,
+    "note": "Yarıçap merkez ile çevre arasındaki mesafedir."
+  },
+  {
+    "id": 229,
+    "level": 2,
+    "question": "Hangi gezegen 'Mavi Gezegen' olarak bilinir?",
+    "options": ["Mars", "Dünya", "Neptün", "Uranüs"],
+    "answer": 1,
+    "note": "Dünya okyanusları nedeniyle mavi görünür."
+  },
+  {
+    "id": 230,
+    "level": 2,
+    "question": "Türkiye'nin milli çiçeği nedir?",
+    "options": ["Gül", "Lale", "Karanfil", "Papatya"],
+    "answer": 1,
+    "note": "Lale Osmanlı kültüründe önemli bir yere sahiptir."
+  },
+  {
+    "id": 231,
+    "level": 3,
+    "question": "Hangi Türk futbolcu 'Kral' lakabıyla anılır?",
+    "options": ["Hakan Şükür", "Rüştü Reçber", "Tugay Kerimoğlu", "Emre Belözoğlu"],
+    "answer": 0,
+    "note": "Hakan Şükür milli takımın en golcü oyuncusudur."
+  },
+  {
+    "id": 232,
+    "level": 3,
+    "question": "Türkiye'nin en büyük havalimanı hangisidir?",
+    "options": ["Atatürk Havalimanı", "Sabiha Gökçen", "İstanbul Havalimanı", "Esenboğa"],
+    "answer": 2,
+    "note": "İstanbul Havalimanı dünyanın en büyüklerinden biridir."
+  },
+  {
+    "id": 233,
+    "level": 3,
+    "question": "Hangi element suyun kimyasal formülünde iki kez bulunur?",
+    "options": ["Oksijen", "Hidrojen", "Karbon", "Azot"],
+    "answer": 1,
+    "note": "H2O formülünde 2 hidrojen atomu vardır."
+  },
+  {
+    "id": 234,
+    "level": 3,
+    "question": "Türkiye'nin en eski şehri hangisidir?",
+    "options": ["İstanbul", "Ankara", "Şanlıurfa", "Konya"],
+    "answer": 2,
+    "note": "Şanlıurfa 12.000 yıllık tarihe sahiptir."
+  },
+  {
+    "id": 235,
+    "level": 3,
+    "question": "Hangi müzik aleti yaylı çalgılar grubundandır?",
+    "options": ["Piyano", "Gitar", "Keman", "Davul"],
+    "answer": 2,
+    "note": "Keman yaylı bir çalgıdır."
+  },
+  {
+    "id": 236,
+    "level": 4,
+    "question": "Türkiye'nin en büyük stadyumu hangisidir?",
+    "options": ["Atatürk Olimpiyat", "Şükrü Saracoğlu", "Ali Sami Yen", "Türk Telekom"],
+    "answer": 0,
+    "note": "Atatürk Olimpiyat Stadı 76.000 kapasitelidir."
+  },
+  {
+    "id": 237,
+    "level": 4,
+    "question": "Hangi Türk müzisyen 'Dağlar Dağlar' şarkısını seslendirmiştir?",
+    "options": ["Neşet Ertaş", "Arif Sağ", "Mahsuni Şerif", "Aşık Veysel"],
+    "answer": 0,
+    "note": "Neşet Ertaş'ın ünlü türküsüdür."
+  },
+  {
+    "id": 238,
+    "level": 4,
+    "question": "Türkiye'nin en büyük kütüphanesi hangisidir?",
+    "options": ["Millet Kütüphanesi", "Beyazıt Kütüphanesi", "Milli Kütüphane", "Süleymaniye Kütüphanesi"],
+    "answer": 2,
+    "note": "Milli Kütüphane Ankara'dadır."
+  },
+  {
+    "id": 239,
+    "level": 4,
+    "question": "Hangi element periyodik tabloda 'Ca' sembolü ile gösterilir?",
+    "options": ["Karbon", "Kalsiyum", "Kadmiyum", "Sezyum"],
+    "answer": 1,
+    "note": "Kalsiyum kemikler için önemlidir."
+  },
+  {
+    "id": 240,
+    "level": 4,
+    "question": "Türkiye'nin en uzun plajı hangi ildedir?",
+    "options": ["Antalya", "Muğla", "İzmir", "Mersin"],
+    "answer": 0,
+    "note": "Patara Plajı Antalya'dadır."
+  },
+  {
+    "id": 241,
+    "level": 5,
+    "question": "Hangi Türk yazar 'Yaban' romanını yazmıştır?",
+    "options": ["Yakup Kadri Karaosmanoğlu", "Halide Edip", "Reşat Nuri", "Peyami Safa"],
+    "answer": 0,
+    "note": "Yakup Kadri'nin 1932 tarihli romanı."
+  },
+  {
+    "id": 242,
+    "level": 5,
+    "question": "Türkiye'nin en büyük müzesi hangisidir?",
+    "options": ["Topkapı Sarayı", "Ayasofya", "Anadolu Medeniyetleri", "İstanbul Arkeoloji"],
+    "answer": 0,
+    "note": "Topkapı Sarayı Müzesi en çok ziyaret edilen müzedir."
+  },
+  {
+    "id": 243,
+    "level": 5,
+    "question": "Hangi Türk besteci 'Çoban Armağanı' eserini bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 1,
+    "note": "Adnan Saygun'un 1935 tarihli eseri."
+  },
+  {
+    "id": 244,
+    "level": 5,
+    "question": "Türkiye'nin en büyük akvaryumu hangisidir?",
+    "options": ["İstanbul Akvaryum", "Antalya Akvaryum", "TurkuaZoo", "Vialand Akvaryum"],
+    "answer": 2,
+    "note": "TurkuaZoo Avrupa'nın en büyüklerinden biridir."
+  },
+  {
+    "id": 245,
+    "level": 5,
+    "question": "Hangi element periyodik tabloda 'Zn' sembolü ile gösterilir?",
+    "options": ["Zirkonyum", "Çinko", "Xenon", "İtriyum"],
+    "answer": 1,
+    "note": "Çinko bağışıklık sistemi için önemlidir."
+  },
+  {
+    "id": 246,
+    "level": 6,
+    "question": "Türkiye'nin ilk kadın pilotu hangi yıl pilot olmuştur?",
+    "options": ["1933", "1936", "1940", "1945"],
+    "answer": 1,
+    "note": "Bedriye Tahir 1936'da pilot oldu."
+  },
+  {
+    "id": 247,
+    "level": 6,
+    "question": "Hangi Türk yazar 'Fatih-Harbiye' romanını yazmıştır?",
+    "options": ["Peyami Safa", "Yakup Kadri", "Halide Edip", "Reşat Nuri"],
+    "answer": 0,
+    "note": "Peyami Safa'nın 1931 tarihli romanı."
+  },
+  {
+    "id": 248,
+    "level": 6,
+    "question": "Türkiye'nin en büyük termik santrali hangisidir?",
+    "options": ["Afşin-Elbistan", "Soma", "Çan", "Yatağan"],
+    "answer": 0,
+    "note": "Afşin-Elbistan en büyük termik santraldir."
+  },
+  {
+    "id": 249,
+    "level": 6,
+    "question": "Hangi Türk besteci 'Prelüd ve İki Dans' eserini bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 0,
+    "note": "Cemal Reşit Rey'in 1934 tarihli eseri."
+  },
+  {
+    "id": 250,
+    "level": 6,
+    "question": "Türkiye'nin en büyük botanik bahçesi hangisidir?",
+    "options": ["Nezahat Gökyiğit", "Atatürk Arboretumu", "Karaca Arboretumu", "Soğuksu"],
+    "answer": 0,
+    "note": "Nezahat Gökyiğit Botanik Bahçesi İstanbul'dadır."
+  }
+,
+  {
+    "id": 251,
+    "level": 7,
+    "question": "Hangi Türk yazar 'Dokuzuncu Hariciye Koğuşu' romanını yazmıştır?",
+    "options": ["Peyami Safa", "Kemal Tahir", "Orhan Kemal", "Sabahattin Ali"],
+    "answer": 0,
+    "note": "Peyami Safa'nın 1930 tarihli romanı."
+  },
+  {
+    "id": 252,
+    "level": 7,
+    "question": "Türkiye'nin en büyük hidroelektrik santrali hangisidir?",
+    "options": ["Atatürk", "Keban", "Karakaya", "Deriner"],
+    "answer": 0,
+    "note": "Atatürk Barajı 2.400 MW güce sahiptir."
+  },
+  {
+    "id": 253,
+    "level": 7,
+    "question": "Hangi Türk besteci 'Senfonietta' eserini bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 2,
+    "note": "Ulvi Cemal Erkin'in 1947 tarihli eseri."
+  },
+  {
+    "id": 254,
+    "level": 7,
+    "question": "Türkiye'nin en büyük ormanı hangisidir?",
+    "options": ["Belgrad Ormanı", "Yedigöller", "Istranca Ormanları", "Kaçkar Ormanları"],
+    "answer": 2,
+    "note": "Istranca Ormanları Trakya'dadır."
+  },
+  {
+    "id": 255,
+    "level": 7,
+    "question": "Hangi element periyodik tabloda 'Mg' sembolü ile gösterilir?",
+    "options": ["Manganez", "Magnezyum", "Molibden", "Mangan"],
+    "answer": 1,
+    "note": "Magnezyum kaslar için önemlidir."
+  },
+  {
+    "id": 256,
+    "level": 8,
+    "question": "Türkiye'nin ilk kadın heykeltıraşı kimdir?",
+    "options": ["Sabiha Bengütaş", "Zerrin Bölükbaşı", "Füreya Koral", "Aliye Berger"],
+    "answer": 0,
+    "note": "Sabiha Bengütaş 1930'larda eserler verdi."
+  },
+  {
+    "id": 257,
+    "level": 8,
+    "question": "Hangi Türk yazar 'Kiralık Konak' romanını yazmıştır?",
+    "options": ["Yakup Kadri", "Halide Edip", "Reşat Nuri", "Peyami Safa"],
+    "answer": 0,
+    "note": "Yakup Kadri'nin 1922 tarihli romanı."
+  },
+  {
+    "id": 258,
+    "level": 8,
+    "question": "Türkiye'nin en büyük kaplıcası hangisidir?",
+    "options": ["Pamukkale", "Kangal Balıklı", "Yalova", "Afyon"],
+    "answer": 0,
+    "note": "Pamukkale travertenleriyle ünlüdür."
+  },
+  {
+    "id": 259,
+    "level": 8,
+    "question": "Hangi Türk besteci 'Keman Konçertosu' eserini bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 2,
+    "note": "Ulvi Cemal Erkin'in 1947 tarihli eseri."
+  },
+  {
+    "id": 260,
+    "level": 8,
+    "question": "Türkiye'nin en büyük gölü olan Van Gölü hangi ildedir?",
+    "options": ["Van", "Bitlis", "Van ve Bitlis", "Ağrı"],
+    "answer": 2,
+    "note": "Van Gölü iki ili de kapsar."
+  },
+  {
+    "id": 261,
+    "level": 9,
+    "question": "Hangi Türk yazar 'Aylak Adam' romanını yazmıştır?",
+    "options": ["Yusuf Atılgan", "Oğuz Atay", "Orhan Pamuk", "Ahmet Hamdi Tanpınar"],
+    "answer": 0,
+    "note": "Yusuf Atılgan'ın 1959 tarihli romanı."
+  },
+  {
+    "id": 262,
+    "level": 9,
+    "question": "Türkiye'nin en büyük rüzgar enerjisi santrali hangisidir?",
+    "options": ["Geycek", "Bares", "Soma", "Bandırma"],
+    "answer": 1,
+    "note": "Bares RES Balıkesir'dedir."
+  },
+  {
+    "id": 263,
+    "level": 9,
+    "question": "Hangi Türk besteci 'Piyano Konçertosu' eserini bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 0,
+    "note": "Cemal Reşit Rey'in 1934 tarihli eseri."
+  },
+  {
+    "id": 264,
+    "level": 9,
+    "question": "Türkiye'nin en büyük sulak alanı hangisidir?",
+    "options": ["Kızılırmak Deltası", "Gediz Deltası", "Sultan Sazlığı", "Göksu Deltası"],
+    "answer": 2,
+    "note": "Sultan Sazlığı Kayseri'dedir."
+  },
+  {
+    "id": 265,
+    "level": 9,
+    "question": "Hangi element periyodik tabloda 'Al' sembolü ile gösterilir?",
+    "options": ["Altın", "Alüminyum", "Argon", "Arsenik"],
+    "answer": 1,
+    "note": "Alüminyum hafif bir metaldir."
+  },
+  {
+    "id": 266,
+    "level": 10,
+    "question": "Türkiye'nin ilk kadın pilotu hangi uçakla uçmuştur?",
+    "options": ["Cessna", "Piper", "Vecihi K-VI", "Fokker"],
+    "answer": 2,
+    "note": "Bedriye Tahir Vecihi K-VI ile uçtu."
+  },
+  {
+    "id": 267,
+    "level": 10,
+    "question": "Hangi Türk yazar 'Araba Sevdası' romanını yazmıştır?",
+    "options": ["Recaizade Mahmut Ekrem", "Namık Kemal", "Ahmet Mithat Efendi", "Şemsettin Sami"],
+    "answer": 0,
+    "note": "Recaizade'nin 1896 tarihli romanı."
+  },
+  {
+    "id": 268,
+    "level": 10,
+    "question": "Türkiye'nin en büyük güneş enerjisi santrali hangisidir?",
+    "options": ["Karapınar", "Konya", "Niğde", "Aksaray"],
+    "answer": 0,
+    "note": "Karapınar GES 1.350 MW kapasitelidir."
+  },
+  {
+    "id": 269,
+    "level": 10,
+    "question": "Hangi Türk besteci 'Senfoni No. 3' eserini bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 1,
+    "note": "Adnan Saygun'un 1961 tarihli eseri."
+  },
+  {
+    "id": 270,
+    "level": 10,
+    "question": "Türkiye'nin en büyük kuş cenneti hangisidir?",
+    "options": ["Manyas", "Uluabat", "Bafa", "Apolyont"],
+    "answer": 0,
+    "note": "Manyas Kuş Cenneti Balıkesir'dedir."
+  },
+  {
+    "id": 271,
+    "level": 11,
+    "question": "Hangi Türk yazar 'Mahur Beste' romanını yazmıştır?",
+    "options": ["Ahmet Ümit", "Zülfü Livaneli", "Orhan Pamuk", "Elif Şafak"],
+    "answer": 1,
+    "note": "Zülfü Livaneli'nin 2006 tarihli romanı."
+  },
+  {
+    "id": 272,
+    "level": 11,
+    "question": "Türkiye'nin en büyük jeotermal santrali hangisidir?",
+    "options": ["Kızıldere", "Germencik", "Aydın", "Denizli"],
+    "answer": 0,
+    "note": "Kızıldere Jeotermal Santrali Denizli'dedir."
+  },
+  {
+    "id": 273,
+    "level": 11,
+    "question": "Hangi Türk besteci 'Senfoni No. 4' eserini bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 1,
+    "note": "Adnan Saygun'un 1974 tarihli eseri."
+  },
+  {
+    "id": 274,
+    "level": 11,
+    "question": "Türkiye'nin en büyük lavanta bahçesi hangisidir?",
+    "options": ["Isparta", "Burdur", "Kütahya", "Afyon"],
+    "answer": 0,
+    "note": "Isparta lavanta üretiminde öncüdür."
+  },
+  {
+    "id": 275,
+    "level": 11,
+    "question": "Hangi element periyodik tabloda 'Ni' sembolü ile gösterilir?",
+    "options": ["Neon", "Nikel", "Nitrojen", "Niyobyum"],
+    "answer": 1,
+    "note": "Nikel paslanmaz çelikte kullanılır."
+  },
+  {
+    "id": 276,
+    "level": 12,
+    "question": "Türkiye'nin ilk kadın müzik öğretmeni kimdir?",
+    "options": ["Leyla Saz", "Safiye Ayla", "Müzeyyen Senar", "Semiha Berksoy"],
+    "answer": 0,
+    "note": "Leyla Saz 19. yüzyılda yaşadı."
+  },
+  {
+    "id": 277,
+    "level": 12,
+    "question": "Hangi Türk yazar 'Esir Şehrin İnsanları' romanını yazmıştır?",
+    "options": ["Kemal Tahir", "Yaşar Kemal", "Orhan Kemal", "Fakir Baykurt"],
+    "answer": 0,
+    "note": "Kemal Tahir'in 1956 tarihli romanı."
+  },
+  {
+    "id": 278,
+    "level": 12,
+    "question": "Türkiye'nin en büyük biyokütle santrali hangisidir?",
+    "options": ["Afyon", "Konya", "Adana", "Manisa"],
+    "answer": 1,
+    "note": "Konya Biyokütle Santrali en büyüğüdür."
+  },
+  {
+    "id": 279,
+    "level": 12,
+    "question": "Hangi Türk besteci 'Senfoni No. 5' eserini bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 1,
+    "note": "Adnan Saygun'un 1984 tarihli eseri."
+  },
+  {
+    "id": 280,
+    "level": 12,
+    "question": "Türkiye'nin en büyük gül bahçesi hangisidir?",
+    "options": ["Isparta", "Burdur", "Afyon", "Denizli"],
+    "answer": 0,
+    "note": "Isparta gül yağı üretiminde dünya lideridir."
+  },
+  {
+    "id": 281,
+    "level": 13,
+    "question": "Hangi Türk yazar 'Bir Gün Tek Başına' romanını yazmıştır?",
+    "options": ["Oğuz Atay", "Yusuf Atılgan", "Ahmet Hamdi Tanpınar", "Orhan Pamuk"],
+    "answer": 1,
+    "note": "Yusuf Atılgan'ın 1974 tarihli romanı."
+  },
+  {
+    "id": 282,
+    "level": 13,
+    "question": "Türkiye'nin en büyük dalyan alanı hangisidir?",
+    "options": ["Köyceğiz", "Dalyan", "Akyaka", "Gökova"],
+    "answer": 1,
+    "note": "Dalyan Köyceğiz Gölü ile Akdeniz'i birleştirir."
+  },
+  {
+    "id": 283,
+    "level": 13,
+    "question": "Hangi Türk besteci 'Senfoni No. 1' eserini bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 1,
+    "note": "Adnan Saygun'un 1953 tarihli eseri."
+  },
+  {
+    "id": 284,
+    "level": 13,
+    "question": "Türkiye'nin en büyük zeytinliği hangisidir?",
+    "options": ["Ayvalık", "Edremit", "Milas", "Gemlik"],
+    "answer": 0,
+    "note": "Ayvalık zeytinyağı üretiminde öncüdür."
+  },
+  {
+    "id": 285,
+    "level": 13,
+    "question": "Hangi element periyodik tabloda 'Cr' sembolü ile gösterilir?",
+    "options": ["Karbon", "Krom", "Sezyum", "Klor"],
+    "answer": 1,
+    "note": "Krom paslanmaz çelikte kullanılır."
+  },
+  {
+    "id": 286,
+    "level": 14,
+    "question": "Türkiye'nin ilk kadın seramik sanatçısı kimdir?",
+    "options": ["Füreya Koral", "Alev Ebüzziya", "Jale Yılmabaşar", "Bingül Başarır"],
+    "answer": 0,
+    "note": "Füreya Koral modern seramiğin öncüsüdür."
+  },
+  {
+    "id": 287,
+    "level": 14,
+    "question": "Hangi Türk yazar 'Hababam Sınıfı' romanını yazmıştır?",
+    "options": ["Rıfat Ilgaz", "Aziz Nesin", "Orhan Kemal", "Yaşar Kemal"],
+    "answer": 0,
+    "note": "Rıfat Ilgaz'ın 1975 tarihli romanı."
+  },
+  {
+    "id": 288,
+    "level": 14,
+    "question": "Türkiye'nin en büyük fındık üreticisi ili hangisidir?",
+    "options": ["Ordu", "Giresun", "Trabzon", "Samsun"],
+    "answer": 0,
+    "note": "Ordu fındık üretiminde liderdir."
+  },
+  {
+    "id": 289,
+    "level": 14,
+    "question": "Hangi Türk besteci 'Senfoni No. 2' eserini bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 2,
+    "note": "Ulvi Cemal Erkin'in 1951 tarihli eseri."
+  },
+  {
+    "id": 290,
+    "level": 14,
+    "question": "Türkiye'nin en büyük çay üreticisi ili hangisidir?",
+    "options": ["Rize", "Trabzon", "Artvin", "Giresun"],
+    "answer": 0,
+    "note": "Rize çay üretiminde liderdir."
+  },
+  {
+    "id": 291,
+    "level": 15,
+    "question": "Hangi Türk yazar 'Kar' romanını yazmıştır?",
+    "options": ["Orhan Pamuk", "Yaşar Kemal", "Oğuz Atay", "Ahmet Ümit"],
+    "answer": 0,
+    "note": "Orhan Pamuk'un 2002 tarihli romanı."
+  },
+  {
+    "id": 292,
+    "level": 15,
+    "question": "Türkiye'nin en büyük tuz üreticisi hangisidir?",
+    "options": ["Tuz Gölü", "Çamaltı Tuzlası", "Koyuncu Tuzlası", "Çankırı Tuzlası"],
+    "answer": 1,
+    "note": "Çamaltı Tuzlası İzmir'dedir."
+  },
+  {
+    "id": 293,
+    "level": 15,
+    "question": "Hangi Türk besteci 'Senfoni No. 1' eserini bestelemiştir?",
+    "options": ["Cemal Reşit Rey", "Adnan Saygun", "Ulvi Cemal Erkin", "Necil Kazım Akses"],
+    "answer": 2,
+    "note": "Ulvi Cemal Erkin'in 1946 tarihli eseri."
+  },
+  {
+    "id": 294,
+    "level": 15,
+    "question": "Türkiye'nin en büyük mermer ocağı hangisidir?",
+    "options": ["Afyon", "Bilecik", "Balıkesir", "Muğla"],
+    "answer": 0,
+    "note": "Afyon mermer üretiminde liderdir."
+  },
+  {
+    "id": 295,
+    "level": 15,
+    "question": "Hangi element periyodik tabloda 'Ti' sembolü ile gösterilir?",
+    "options": ["Talyum", "Titanyum", "Toryum", "Tennesin"],
+    "answer": 1,
+    "note": "Titanyum hafif ve dayanıklı bir metaldir."
+  }
+]
