@@ -15,29 +15,9 @@ const QuestionCard = ({ question, selectedAnswer, onAnswer, eliminatedOptions, p
       }
     }
     if (pendingAnswer === index) {
-      return 'bg-gradient-to-r from-yellow-500 to-orange-600 scale-105';
+      return 'bg-gradient-to-r from-yellow-500 to-orange-600';
     }
     return 'bg-gradient-to-r from-game-blue to-game-purple hover:scale-105';
-  };
-
-  const getButtonAnimation = (index) => {
-    if (pendingAnswer === index) {
-      return {
-        scale: [1, 1.08, 1],
-        boxShadow: [
-          "0 0 20px rgba(255, 215, 0, 0.5)",
-          "0 0 40px rgba(255, 215, 0, 0.9)",
-          "0 0 20px rgba(255, 215, 0, 0.5)"
-        ]
-      };
-    }
-    if (selectedAnswer === index) {
-      return {
-        scale: [1.05, 1.1, 1.05],
-        rotate: [0, 2, -2, 0]
-      };
-    }
-    return {};
   };
 
   return (
@@ -61,27 +41,29 @@ const QuestionCard = ({ question, selectedAnswer, onAnswer, eliminatedOptions, p
       <div className="grid grid-cols-2 gap-6">
         {question.options.map((option, index) => (
           <motion.button
-            key={index}
+            key={`${question.id}-${index}`}
             initial={{ scale: 0.8, opacity: 0, rotateY: -20 }}
-            animate={{
-              scale: 1,
-              opacity: 1,
-              rotateY: 0,
-              ...getButtonAnimation(index)
-            }}
-            transition={{
-              delay: 0.5 + index * 0.15,
-              type: "spring",
-              stiffness: 200,
-              ...(pendingAnswer === index || selectedAnswer === index ? {
-                repeat: pendingAnswer === index ? Infinity : 3,
-                duration: 0.6
-              } : {})
-            }}
-            whileHover={selectedAnswer === null && !eliminatedOptions.includes(index) ? { scale: 1.05, rotateZ: 1 } : {}}
-            whileTap={selectedAnswer === null && !eliminatedOptions.includes(index) ? { scale: 0.95 } : {}}
-            onClick={() => !eliminatedOptions.includes(index) && selectedAnswer === null && onAnswer(index)}
-            disabled={selectedAnswer !== null || eliminatedOptions.includes(index)}
+            animate={
+              pendingAnswer === index
+                ? {
+                    scale: [1.05, 1.12, 1.05],
+                    boxShadow: [
+                      "0 0 20px rgba(255, 215, 0, 0.5)",
+                      "0 0 50px rgba(255, 215, 0, 1)",
+                      "0 0 20px rgba(255, 215, 0, 0.5)"
+                    ]
+                  }
+                : { scale: 1, opacity: 1, rotateY: 0 }
+            }
+            transition={
+              pendingAnswer === index
+                ? { repeat: Infinity, duration: 0.8 }
+                : { delay: 0.5 + index * 0.15, type: "spring", stiffness: 200 }
+            }
+            whileHover={selectedAnswer === null && pendingAnswer === null && !eliminatedOptions.includes(index) ? { scale: 1.05, rotateZ: 1 } : {}}
+            whileTap={selectedAnswer === null && pendingAnswer === null && !eliminatedOptions.includes(index) ? { scale: 0.95 } : {}}
+            onClick={() => !eliminatedOptions.includes(index) && selectedAnswer === null && pendingAnswer === null && onAnswer(index)}
+            disabled={selectedAnswer !== null || eliminatedOptions.includes(index) || pendingAnswer !== null}
             className={`hexagon-button ${getButtonStyle(index)} p-8 text-white text-2xl font-bold transition-all duration-300 border-2 border-game-gold/50 shadow-xl`}
           >
             <span className="text-game-gold mr-3 text-3xl">{letters[index]}:</span>

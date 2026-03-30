@@ -106,6 +106,15 @@ function App() {
       setGameState('playing');
       setCurrentLevel(1);
       loadQuestion(1);
+      
+      // İlk tıklamada sesleri aktif et
+      const enableAudio = () => {
+        thinkingMusicRef.current?.play().then(() => {
+          thinkingMusicRef.current.pause();
+          thinkingMusicRef.current.currentTime = 0;
+        }).catch(e => console.log('Ses hazırlama:', e));
+      };
+      enableAudio();
     }
   };
 
@@ -138,29 +147,36 @@ function App() {
     setSelectedAnswer(pendingAnswer);
     
     // Thinking müziğini durdur
-    thinkingMusicRef.current?.pause();
+    if (thinkingMusicRef.current) {
+      thinkingMusicRef.current.pause();
+      thinkingMusicRef.current.currentTime = 0;
+    }
     
     setTimeout(() => {
       if (pendingAnswer === currentQuestion.answer) {
         // Doğru cevap sesi (10 saniye alkış)
-        correctSoundRef.current?.play().catch(e => console.log('Ses çalınamadı:', e));
+        if (correctSoundRef.current) {
+          correctSoundRef.current.currentTime = 0;
+          correctSoundRef.current.play().catch(e => console.log('Ses çalınamadı:', e));
+        }
         
         setTimeout(() => {
           if (currentLevel === 15) {
             endGame(moneyLadder[currentLevel - 1].amount);
           } else {
-            setCurrentLevel(currentLevel + 1);
-            loadQuestion(currentLevel + 1);
-            // Thinking müziğini tekrar başlat (müzik sorusu değilse)
-            if (thinkingMusicRef.current && !currentQuestion.spotifyId) {
-              thinkingMusicRef.current.currentTime = 0;
-              thinkingMusicRef.current.play().catch(e => console.log('Müzik çalınamadı:', e));
-            }
+            const nextLevel = currentLevel + 1;
+            setCurrentLevel(nextLevel);
+            setSelectedAnswer(null);
+            setPendingAnswer(null);
+            loadQuestion(nextLevel);
           }
         }, 10000); // 10 saniye alkış sesi
       } else {
         // Yanlış cevap sesi
-        wrongSoundRef.current?.play().catch(e => console.log('Ses çalınamadı:', e));
+        if (wrongSoundRef.current) {
+          wrongSoundRef.current.currentTime = 0;
+          wrongSoundRef.current.play().catch(e => console.log('Ses çalınamadı:', e));
+        }
         setTimeout(() => handleWrongAnswer(), 3000);
       }
     }, 2000); // Animasyon için 2 saniye bekle
@@ -241,13 +257,25 @@ function App() {
     setCurrentLevel(1);
     setCurrentQuestion(null);
     setSelectedAnswer(null);
+    setPendingAnswer(null);
+    setShowConfirmation(false);
     setJokers({ fiftyFifty: true, audience: true, phone: true });
     setEliminatedOptions([]);
     setTimeLeft(40);
     
-    // Müziği durdur
-    thinkingMusicRef.current?.pause();
-    if (thinkingMusicRef.current) thinkingMusicRef.current.currentTime = 0;
+    // Tüm sesleri durdur
+    if (thinkingMusicRef.current) {
+      thinkingMusicRef.current.pause();
+      thinkingMusicRef.current.currentTime = 0;
+    }
+    if (correctSoundRef.current) {
+      correctSoundRef.current.pause();
+      correctSoundRef.current.currentTime = 0;
+    }
+    if (wrongSoundRef.current) {
+      wrongSoundRef.current.pause();
+      wrongSoundRef.current.currentTime = 0;
+    }
   };
 
   return (
