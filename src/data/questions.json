@@ -4874,8 +4874,8 @@
     "level": 7,
     "question": "'Yıldızların Altında' şarkısı kimin?",
     "options": [
+      "Ömer Bedrettin Uşaklı",
       "Sezen Aksu",
-      "Ajda Pekkan",
       "Nilüfer",
       "Sertab Erener"
     ],
@@ -5724,14 +5724,15 @@
   {
     "id": 409,
     "level": 1,
-    "question": "Kemal Sunal'ın 'İnek Şaban' filminde Şaban'ın mesleği nedir?",
+    "question": "Hangi hayvan en uzun boyunludur?",
     "options": [
-      "Sütçü",
-      "Kasap",
-      "Berber",
-      "Garson"
+      "Fil",
+      "Zürafa",
+      "Deve",
+      "At"
     ],
-    "answer": 0
+    "answer": 1,
+    "note": "Zürafalar 5-6 metre boyunda olabilir."
   },
   {
     "id": 410,
@@ -5760,14 +5761,15 @@
   {
     "id": 412,
     "level": 2,
-    "question": "Kemal Sunal'ın 'Şabaniye' filminde hangi mesleği yapmaktadır?",
+    "question": "Hangi gezegen en çok uyduya sahiptir?",
     "options": [
-      "Öğretmen",
-      "Doktor",
-      "Avukat",
-      "Polis"
+      "Mars",
+      "Jüpiter",
+      "Satürn",
+      "Uranüs"
     ],
-    "answer": 0
+    "answer": 2,
+    "note": "Satürn'ün 80'den fazla uydusu vardır."
   },
   {
     "id": 413,
@@ -5796,14 +5798,15 @@
   {
     "id": 415,
     "level": 3,
-    "question": "Kemal Sunal'ın 'Doktor Civanım' filminde hangi mesleği yapmaktadır?",
+    "question": "Hangi ülke Stonehenge'in bulunduğu yerdir?",
     "options": [
-      "Doktor",
-      "Hemşire",
-      "Eczacı",
-      "Veteriner"
+      "İrlanda",
+      "İngiltere",
+      "İskoçya",
+      "Galler"
     ],
-    "answer": 0
+    "answer": 1,
+    "note": "Stonehenge İngiltere'de antik bir anıttır."
   },
   {
     "id": 416,
@@ -5832,14 +5835,15 @@
   {
     "id": 418,
     "level": 4,
-    "question": "Kemal Sunal'ın 'Avanak Apti' filminde Apti'nin köyü neresidir?",
+    "question": "Hangi ülke Angkor Wat tapınağının bulunduğu yerdir?",
     "options": [
-      "Anadolu",
-      "Trakya",
-      "Karadeniz",
-      "Ege"
+      "Tayland",
+      "Vietnam",
+      "Kamboçya",
+      "Myanmar"
     ],
-    "answer": 0
+    "answer": 2,
+    "note": "Angkor Wat Kamboçya'dadır."
   },
   {
     "id": 419,
@@ -5868,14 +5872,15 @@
   {
     "id": 421,
     "level": 5,
-    "question": "Kemal Sunal'ın 'Salako' filminde Salako'nun gerçek adı nedir?",
+    "question": "Hangi yıl Kore Savaşı başlamıştır?",
     "options": [
-      "Şaban",
-      "Ramazan",
-      "Hüseyin",
-      "Mehmet"
+      "1948",
+      "1950",
+      "1952",
+      "1953"
     ],
-    "answer": 1
+    "answer": 1,
+    "note": "Kore Savaşı 1950-1953 arası sürdü."
   },
   {
     "id": 422,
@@ -5904,14 +5909,15 @@
   {
     "id": 424,
     "level": 6,
-    "question": "Kemal Sunal'ın 'Gülen Gözler' filminde partneri kimdir?",
+    "question": "Hangi element periyodik tabloda 'Ni' sembolü ile gösterilir?",
     "options": [
-      "Müjde Ar",
-      "Fatma Girik",
-      "Türkan Şoray",
-      "Hülya Koçyiğit"
+      "Neon",
+      "Nikel",
+      "Nitrojen",
+      "Niyobyum"
     ],
-    "answer": 0
+    "answer": 1,
+    "note": "Nikel bir geçiş metalidir."
   },
   {
     "id": 425,
@@ -5940,14 +5946,15 @@
   {
     "id": 427,
     "level": 7,
-    "question": "Kemal Sunal'ın 'Çiçek Abbas' filminde Abbas'ın mesleği nedir?",
+    "question": "Hangi yıl Vietnam Savaşı sona ermiştir?",
     "options": [
-      "Çiçekçi",
-      "Berber",
-      "Garson",
-      "Taksici"
+      "1973",
+      "1975",
+      "1977",
+      "1979"
     ],
-    "answer": 0
+    "answer": 1,
+    "note": "30 Nisan 1975'te Saygon düştü."
   },
   {
     "id": 428,
@@ -5976,14 +5983,15 @@
   {
     "id": 430,
     "level": 8,
-    "question": "Kemal Sunal'ın 'Yoksul' filminde hangi karakteri canlandırmıştır?",
+    "question": "Hangi element periyodik tabloda 'Ti' sembolü ile gösterilir?",
     "options": [
-      "Yoksul",
-      "Şaban",
-      "Ramazan",
-      "Hüsnü"
+      "Tantal",
+      "Titanyum",
+      "Toryum",
+      "Talyum"
     ],
-    "answer": 0
+    "answer": 1,
+    "note": "Titanyum hafif ve dayanıklı bir metaldir."
   },
   {
     "id": 431,
@@ -6012,14 +6020,15 @@
   {
     "id": 433,
     "level": 9,
-    "question": "Kemal Sunal'ın 'Arabesk' filminde hangi karakteri canlandırmıştır?",
+    "question": "Hangi yıl Küba Füze Krizi yaşanmıştır?",
     "options": [
-      "Mahmut",
-      "Şaban",
-      "Ramazan",
-      "Hüsnü"
+      "1960",
+      "1962",
+      "1964",
+      "1966"
     ],
-    "answer": 0
+    "answer": 1,
+    "note": "Ekim 1962'de dünya nükleer savaşın eşiğine geldi."
   },
   {
     "id": 434,
@@ -6048,14 +6057,15 @@
   {
     "id": 436,
     "level": 10,
-    "question": "Kemal Sunal'ın 'Şendul Şaban' filminde Şaban'ın mesleği nedir?",
+    "question": "Hangi element periyodik tabloda 'Mn' sembolü ile gösterilir?",
     "options": [
-      "Şoför",
-      "Berber",
-      "Garson",
-      "Kapıcı"
+      "Magnezyum",
+      "Mangan",
+      "Molibden",
+      "Mendelevyum"
     ],
-    "answer": 0
+    "answer": 1,
+    "note": "Mangan çelik üretiminde kullanılır."
   },
   {
     "id": 437,
@@ -6084,14 +6094,15 @@
   {
     "id": 439,
     "level": 11,
-    "question": "Kemal Sunal'ın 'Postacı' filminde hangi mesleği yapmaktadır?",
+    "question": "Hangi yıl Çernobil nükleer kazası gerçekleşmiştir?",
     "options": [
-      "Postacı",
-      "Berber",
-      "Garson",
-      "Taksici"
+      "1984",
+      "1986",
+      "1988",
+      "1990"
     ],
-    "answer": 0
+    "answer": 1,
+    "note": "26 Nisan 1986'da Ukrayna'da gerçekleşti."
   },
   {
     "id": 440,
@@ -6120,14 +6131,15 @@
   {
     "id": 442,
     "level": 12,
-    "question": "Kemal Sunal'ın 'Davaro' filminde Davaro'nun köyü neresidir?",
+    "question": "Hangi element periyodik tabloda 'Co' sembolü ile gösterilir?",
     "options": [
-      "Karadeniz",
-      "Ege",
-      "Akdeniz",
-      "Doğu Anadolu"
+      "Bakır",
+      "Kobalt",
+      "Krom",
+      "Karbon"
     ],
-    "answer": 3
+    "answer": 1,
+    "note": "Kobalt mavi pigment üretiminde kullanılır."
   },
   {
     "id": 443,
@@ -6156,14 +6168,15 @@
   {
     "id": 445,
     "level": 13,
-    "question": "Kemal Sunal'ın 'Üç Kağıtçı' filminde kaç kişi vardır?",
+    "question": "Hangi yıl Apollo 11 Ay'a iniş yaptı?",
     "options": [
-      "2",
-      "3",
-      "4",
-      "5"
+      "1967",
+      "1968",
+      "1969",
+      "1970"
     ],
-    "answer": 1
+    "answer": 2,
+    "note": "20 Temmuz 1969'da Neil Armstrong Ay'a ayak bastı."
   },
   {
     "id": 446,
@@ -6192,14 +6205,15 @@
   {
     "id": 448,
     "level": 14,
-    "question": "Kemal Sunal hangi yılda doğmuştur?",
+    "question": "Hangi element periyodik tabloda 'Cr' sembolü ile gösterilir?",
     "options": [
-      "1944",
-      "1946",
-      "1948",
-      "1950"
+      "Karbon",
+      "Kalsiyum",
+      "Krom",
+      "Sezyum"
     ],
-    "answer": 0
+    "answer": 2,
+    "note": "Krom paslanmaz çelik üretiminde kullanılır."
   },
   {
     "id": 449,
@@ -6228,14 +6242,15 @@
   {
     "id": 451,
     "level": 15,
-    "question": "Kemal Sunal'ın son filmi hangisidir?",
+    "question": "Hangi yıl Hubble Uzay Teleskopu fırlatılmıştır?",
     "options": [
-      "Balalayka",
-      "Propaganda",
-      "Kahpe Bizans",
-      "Çöpçüler Kralı"
+      "1988",
+      "1990",
+      "1992",
+      "1994"
     ],
-    "answer": 0
+    "answer": 1,
+    "note": "24 Nisan 1990'da uzaya gönderildi."
   },
   {
     "id": 452,
