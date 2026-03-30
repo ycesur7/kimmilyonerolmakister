@@ -29,7 +29,8 @@ Her joker oyun boyunca **sadece 1 kez** kullanılabilir!
 - Yanlış cevapta baraj miktarı garantili
 
 ### ⏱️ Zamanlayıcı
-- Her soru için **30 saniye**
+- **Baraj öncesi (1-10)**: Her soru için 40 saniye
+- **Baraj sonrası (11-15)**: Süresiz düşünme hakkı
 - Son 10 saniyede kırmızı yanıp söner
 - Süre biterse otomatik yanlış sayılır
 
@@ -79,17 +80,29 @@ Her joker oyun boyunca **sadece 1 kez** kullanılabilir!
    - Detaylı akademik sorular
    - Popüler kültür
 
-## 🎵 Ses Dosyaları Ekleme (Opsiyonel)
+## 🎵 Ses Dosyaları Nasıl Eklenir?
 
-1. `public/sounds/` klasörüne şu dosyaları ekle:
-   - `correct.mp3` - Doğru cevap
-   - `wrong.mp3` - Yanlış cevap
-   - `thinking.mp3` - Düşünme müziği
-   - `intro.mp3` - Giriş müziği
+### Adım 1: Sesleri İndir
+YouTube'dan şu aramaları yap:
+- "Kim Milyoner thinking music"
+- "Kim Milyoner correct answer sound"
+- "Kim Milyoner wrong answer sound"
 
-2. YouTube'dan "Kim Milyoner Olmak İster müzikleri" ara
-3. Online MP3 converter ile indir
-4. Klasöre kopyala
+### Adım 2: MP3'e Çevir
+Online MP3 converter kullan (örn: y2mate.com, ytmp3.cc)
+
+### Adım 3: Dosyaları Kopyala
+İndirdiğin dosyaları şu isimlerde `public/sounds/` klasörüne kopyala:
+- `thinking.mp3` (40 saniye, loop olarak çalacak)
+- `correct.mp3` (doğru cevap sesi)
+- `wrong.mp3` (yanlış cevap sesi)
+
+### Ses Sistemi Nasıl Çalışır?
+
+- **Soru başladığında**: `thinking.mp3` otomatik başlar ve loop olarak çalar
+- **Cevap verildiğinde**: Thinking müziği durur, `correct.mp3` veya `wrong.mp3` çalar
+- **Sonraki soru**: Thinking müziği tekrar başlar
+- **Baraj sonrası (11-15)**: Süre yok ama müzik çalmaya devam eder
 
 ## 📺 Akıllı Tahtada Kullanım
 

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import QuestionCard from './components/QuestionCard';
 import Sidebar from './components/Sidebar';
@@ -35,29 +35,53 @@ function App() {
     phone: true
   });
   const [eliminatedOptions, setEliminatedOptions] = useState([]);
-  const [timeLeft, setTimeLeft] = useState(30);
+  const [timeLeft, setTimeLeft] = useState(40);
   const [leaderboard, setLeaderboard] = useState([]);
   const [finalAmount, setFinalAmount] = useState('0 TL');
+  
+  const thinkingMusicRef = useRef(null);
+  const correctSoundRef = useRef(null);
+  const wrongSoundRef = useRef(null);
 
   useEffect(() => {
     const saved = localStorage.getItem('milyoner-leaderboard');
     if (saved) {
       setLeaderboard(JSON.parse(saved));
     }
+    
+    // Ses dosyalarını yükle
+    thinkingMusicRef.current = new Audio('/sounds/thinking.mp3');
+    thinkingMusicRef.current.loop = true;
+    correctSoundRef.current = new Audio('/sounds/correct.mp3');
+    wrongSoundRef.current = new Audio('/sounds/wrong.mp3');
   }, []);
 
   useEffect(() => {
-    if (gameState === 'playing' && timeLeft > 0) {
+    // Baraj sonrası (11-15) sorularda süre yok
+    const hasTimer = currentLevel <= 10;
+    
+    if (gameState === 'playing' && hasTimer && timeLeft > 0) {
       const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
       return () => clearTimeout(timer);
-    } else if (timeLeft === 0 && gameState === 'playing') {
+    } else if (hasTimer && timeLeft === 0 && gameState === 'playing') {
       handleWrongAnswer();
     }
-  }, [timeLeft, gameState]);
+  }, [timeLeft, gameState, currentLevel]);
+  
+  useEffect(() => {
+    // Müzik kontrolü
+    if (gameState === 'playing') {
+      thinkingMusicRef.current?.play().catch(e => console.log('Müzik çalınamadı:', e));
+    } else {
+      thinkingMusicRef.current?.pause();
+      if (thinkingMusicRef.current) thinkingMusicRef.current.currentTime = 0;
+    }
+  }, [gameState]);
 
   const startGame = () => {
     if (playerName.trim()) {
       setGameState('playing');
+      setCurrentLevel(1);
       loadQuestion(1);
     }
   };
@@ -68,23 +92,40 @@ function App() {
     setCurrentQuestion(randomQuestion);
     setSelectedAnswer(null);
     setEliminatedOptions([]);
-    setTimeLeft(30);
+    // Baraj sonrası (11-15) sorularda süre yok
+    setTimeLeft(level <= 10 ? 40 : null);
   };
 
   const handleAnswer = (index) => {
     setSelectedAnswer(index);
+    
+    // Thinking müziğini durdur
+    thinkingMusicRef.current?.pause();
+    
     setTimeout(() => {
       if (index === currentQuestion.answer) {
-        if (currentLevel === 15) {
-          endGame(moneyLadder[currentLevel - 1].amount);
-        } else {
-          setCurrentLevel(currentLevel + 1);
-          loadQuestion(currentLevel + 1);
-        }
+        // Doğru cevap sesi
+        correctSoundRef.current?.play().catch(e => console.log('Ses çalınamadı:', e));
+        
+        setTimeout(() => {
+          if (currentLevel === 15) {
+            endGame(moneyLadder[currentLevel - 1].amount);
+          } else {
+            setCurrentLevel(currentLevel + 1);
+            loadQuestion(currentLevel + 1);
+            // Thinking müziğini tekrar başlat
+            if (thinkingMusicRef.current) {
+              thinkingMusicRef.current.currentTime = 0;
+              thinkingMusicRef.current.play().catch(e => console.log('Müzik çalınamadı:', e));
+            }
+          }
+        }, 2000);
       } else {
-        handleWrongAnswer();
+        // Yanlış cevap sesi
+        wrongSoundRef.current?.play().catch(e => console.log('Ses çalınamadı:', e));
+        setTimeout(() => handleWrongAnswer(), 2000);
       }
-    }, 2000);
+    }, 1000);
   };
 
   const handleWrongAnswer = () => {
@@ -153,7 +194,11 @@ function App() {
     setSelectedAnswer(null);
     setJokers({ fiftyFifty: true, audience: true, phone: true });
     setEliminatedOptions([]);
-    setTimeLeft(30);
+    setTimeLeft(40);
+    
+    // Müziği durdur
+    thinkingMusicRef.current?.pause();
+    if (thinkingMusicRef.current) thinkingMusicRef.current.currentTime = 0;
   };
 
   return (
@@ -200,9 +245,15 @@ function App() {
                 <div className="text-white text-2xl font-bold">
                   {playerName} - Soru {currentLevel}/15
                 </div>
-                <div className={`text-3xl font-bold ${timeLeft <= 10 ? 'text-red-500 animate-pulse' : 'text-game-gold'}`}>
-                  ⏱️ {timeLeft}s
-                </div>
+                {currentLevel <= 10 ? (
+                  <div className={`text-3xl font-bold ${timeLeft <= 10 ? 'text-red-500 animate-pulse' : 'text-game-gold'}`}>
+                    ⏱️ {timeLeft}s
+                  </div>
+                ) : (
+                  <div className="text-2xl text-game-gold font-bold">
+                    ⏱️ Süresiz
+                  </div>
+                )}
               </div>
 
               <QuestionCard
