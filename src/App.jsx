@@ -88,33 +88,28 @@ function App() {
   }, [timeLeft, gameState, currentLevel]);
   
   useEffect(() => {
-    // Müzik kontrolü
-    if (gameState === 'playing' && !showMusicPlayer) {
-      // Müzik sorusu değilse thinking müziğini çal
-      thinkingMusicRef.current?.play().catch(e => {
-        console.log('Müzik çalınamadı:', e);
-        // Kullanıcı etkileşimi gerekebilir
-      });
-    } else {
-      thinkingMusicRef.current?.pause();
-      if (thinkingMusicRef.current) thinkingMusicRef.current.currentTime = 0;
+    // Müzik kontrolü - sadece müzik sorusu yoksa thinking çal
+    if (gameState === 'playing' && !showMusicPlayer && currentQuestion && !currentQuestion.spotifyId) {
+      if (thinkingMusicRef.current && thinkingMusicRef.current.paused) {
+        thinkingMusicRef.current.currentTime = 0;
+        thinkingMusicRef.current.play().catch(e => {
+          console.log('Thinking müziği çalınamadı:', e);
+        });
+      }
     }
-  }, [gameState, showMusicPlayer]);
+  }, [gameState, showMusicPlayer, currentQuestion]);
 
   const startGame = () => {
     if (playerName.trim()) {
+      // İlk tıklamada thinking müziğini başlat
+      if (thinkingMusicRef.current) {
+        thinkingMusicRef.current.currentTime = 0;
+        thinkingMusicRef.current.play().catch(e => console.log('Müzik başlatılamadı:', e));
+      }
+      
       setGameState('playing');
       setCurrentLevel(1);
       loadQuestion(1);
-      
-      // İlk tıklamada sesleri aktif et
-      const enableAudio = () => {
-        thinkingMusicRef.current?.play().then(() => {
-          thinkingMusicRef.current.pause();
-          thinkingMusicRef.current.currentTime = 0;
-        }).catch(e => console.log('Ses hazırlama:', e));
-      };
-      enableAudio();
     }
   };
 
@@ -123,17 +118,29 @@ function App() {
     const randomQuestion = levelQuestions[Math.floor(Math.random() * levelQuestions.length)];
     setCurrentQuestion(randomQuestion);
     setSelectedAnswer(null);
+    setPendingAnswer(null);
     setEliminatedOptions([]);
     setMusicEnded(false);
     
     // Müzik sorusu mu kontrol et
     if (randomQuestion.spotifyId) {
+      // Thinking müziğini durdur
+      if (thinkingMusicRef.current) {
+        thinkingMusicRef.current.pause();
+        thinkingMusicRef.current.currentTime = 0;
+      }
       setShowMusicPlayer(true);
       setTimeLeft(null); // Müzik bitene kadar süre başlamasın
     } else {
       setShowMusicPlayer(false);
       // Baraj sonrası (11-15) sorularda süre yok
       setTimeLeft(level <= 10 ? 40 : null);
+      
+      // Thinking müziğini başlat
+      if (thinkingMusicRef.current && gameState === 'playing') {
+        thinkingMusicRef.current.currentTime = 0;
+        thinkingMusicRef.current.play().catch(e => console.log('Müzik çalınamadı:', e));
+      }
     }
   };
 
