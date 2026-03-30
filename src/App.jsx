@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import QuestionCard from './components/QuestionCard';
 import Sidebar from './components/Sidebar';
 import MusicPlayer from './components/MusicPlayer';
+import AudienceJoker from './components/AudienceJoker';
+import PhoneJoker from './components/PhoneJoker';
 import questionsData from './data/questions.json';
 import './App.css';
 
@@ -41,6 +43,10 @@ function App() {
   const [finalAmount, setFinalAmount] = useState('0 TL');
   const [showMusicPlayer, setShowMusicPlayer] = useState(false);
   const [musicEnded, setMusicEnded] = useState(false);
+  const [showAudienceJoker, setShowAudienceJoker] = useState(false);
+  const [showPhoneJoker, setShowPhoneJoker] = useState(false);
+  const [showConfirmation, setShowConfirmation] = useState(false);
+  const [pendingAnswer, setPendingAnswer] = useState(null);
   
   const thinkingMusicRef = useRef(null);
   const correctSoundRef = useRef(null);
@@ -55,8 +61,18 @@ function App() {
     // Ses dosyalarını yükle
     thinkingMusicRef.current = new Audio('/sounds/thinking.mp3');
     thinkingMusicRef.current.loop = true;
+    thinkingMusicRef.current.volume = 0.5;
     correctSoundRef.current = new Audio('/sounds/correct.mp3');
+    correctSoundRef.current.volume = 0.7;
     wrongSoundRef.current = new Audio('/sounds/wrong.mp3');
+    wrongSoundRef.current.volume = 0.7;
+    
+    return () => {
+      // Cleanup
+      thinkingMusicRef.current?.pause();
+      correctSoundRef.current?.pause();
+      wrongSoundRef.current?.pause();
+    };
   }, []);
 
   useEffect(() => {
@@ -73,13 +89,17 @@ function App() {
   
   useEffect(() => {
     // Müzik kontrolü
-    if (gameState === 'playing') {
-      thinkingMusicRef.current?.play().catch(e => console.log('Müzik çalınamadı:', e));
+    if (gameState === 'playing' && !showMusicPlayer) {
+      // Müzik sorusu değilse thinking müziğini çal
+      thinkingMusicRef.current?.play().catch(e => {
+        console.log('Müzik çalınamadı:', e);
+        // Kullanıcı etkileşimi gerekebilir
+      });
     } else {
       thinkingMusicRef.current?.pause();
       if (thinkingMusicRef.current) thinkingMusicRef.current.currentTime = 0;
     }
-  }, [gameState]);
+  }, [gameState, showMusicPlayer]);
 
   const startGame = () => {
     if (playerName.trim()) {
@@ -98,7 +118,7 @@ function App() {
     setMusicEnded(false);
     
     // Müzik sorusu mu kontrol et
-    if (randomQuestion.musicUrl) {
+    if (randomQuestion.spotifyId) {
       setShowMusicPlayer(true);
       setTimeLeft(null); // Müzik bitene kadar süre başlamasın
     } else {
@@ -108,14 +128,20 @@ function App() {
     }
   };
 
-  const handleAnswer = (index) => {
-    setSelectedAnswer(index);
+  const handleAnswerClick = (index) => {
+    setPendingAnswer(index);
+    setShowConfirmation(true);
+  };
+
+  const confirmAnswer = () => {
+    setShowConfirmation(false);
+    setSelectedAnswer(pendingAnswer);
     
     // Thinking müziğini durdur
     thinkingMusicRef.current?.pause();
     
     setTimeout(() => {
-      if (index === currentQuestion.answer) {
+      if (pendingAnswer === currentQuestion.answer) {
         // Doğru cevap sesi (10 saniye alkış)
         correctSoundRef.current?.play().catch(e => console.log('Ses çalınamadı:', e));
         
@@ -126,7 +152,7 @@ function App() {
             setCurrentLevel(currentLevel + 1);
             loadQuestion(currentLevel + 1);
             // Thinking müziğini tekrar başlat (müzik sorusu değilse)
-            if (thinkingMusicRef.current && !currentQuestion.musicUrl) {
+            if (thinkingMusicRef.current && !currentQuestion.spotifyId) {
               thinkingMusicRef.current.currentTime = 0;
               thinkingMusicRef.current.play().catch(e => console.log('Müzik çalınamadı:', e));
             }
@@ -137,7 +163,12 @@ function App() {
         wrongSoundRef.current?.play().catch(e => console.log('Ses çalınamadı:', e));
         setTimeout(() => handleWrongAnswer(), 3000);
       }
-    }, 1000);
+    }, 2000); // Animasyon için 2 saniye bekle
+  };
+
+  const cancelAnswer = () => {
+    setShowConfirmation(false);
+    setPendingAnswer(null);
   };
   
   const handleMusicEnd = () => {
@@ -162,7 +193,14 @@ function App() {
   const endGame = (amount) => {
     setFinalAmount(amount);
     setGameState('gameover');
-    const newEntry = { name: playerName, amount, date: new Date().toLocaleDateString('tr-TR') };
+    const now = new Date();
+    const newEntry = { 
+      name: playerName, 
+      amount, 
+      level: currentLevel,
+      date: now.toLocaleDateString('tr-TR'),
+      time: now.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' })
+    };
     const updated = [...leaderboard, newEntry].sort((a, b) => {
       const aVal = parseInt(a.amount.replace(/\D/g, ''));
       const bVal = parseInt(b.amount.replace(/\D/g, ''));
@@ -187,26 +225,13 @@ function App() {
 
   const useAudience = () => {
     if (!jokers.audience) return;
-    const percentages = [0, 0, 0, 0];
-    percentages[currentQuestion.answer] = 60 + Math.floor(Math.random() * 20);
-    const remaining = 100 - percentages[currentQuestion.answer];
-    const others = [0, 1, 2, 3].filter(i => i !== currentQuestion.answer);
-    others.forEach((idx, i) => {
-      if (i === others.length - 1) {
-        percentages[idx] = remaining - percentages.reduce((sum, val, j) => j !== currentQuestion.answer && j !== idx ? sum + val : sum, 0);
-      } else {
-        percentages[idx] = Math.floor(Math.random() * (remaining / 2));
-      }
-    });
-    alert(`Seyirci Oylaması:\nA: %${percentages[0]}\nB: %${percentages[1]}\nC: %${percentages[2]}\nD: %${percentages[3]}`);
+    setShowAudienceJoker(true);
     setJokers({ ...jokers, audience: false });
   };
 
   const usePhone = () => {
     if (!jokers.phone) return;
-    const confidence = 70 + Math.floor(Math.random() * 20);
-    const letters = ['A', 'B', 'C', 'D'];
-    alert(`Telefon Jokeri:\n"Bence cevap ${letters[currentQuestion.answer]} şıkkı. %${confidence} eminim."`);
+    setShowPhoneJoker(true);
     setJokers({ ...jokers, phone: false });
   };
 
@@ -300,8 +325,9 @@ function App() {
               <QuestionCard
                 question={currentQuestion}
                 selectedAnswer={selectedAnswer}
-                onAnswer={handleAnswer}
+                onAnswer={handleAnswerClick}
                 eliminatedOptions={eliminatedOptions}
+                pendingAnswer={pendingAnswer}
               />
 
               <div className="mt-6 flex gap-4 justify-center">
@@ -361,11 +387,72 @@ function App() {
             />
             
             {/* Müzik Player */}
-            {showMusicPlayer && currentQuestion.musicUrl && (
+            {showMusicPlayer && currentQuestion.spotifyId && (
               <MusicPlayer
-                musicUrl={currentQuestion.musicUrl}
+                spotifyId={currentQuestion.spotifyId}
                 onMusicEnd={handleMusicEnd}
               />
+            )}
+            
+            {/* Seyirci Jokeri */}
+            {showAudienceJoker && (
+              <AudienceJoker
+                correctAnswer={currentQuestion.answer}
+                onClose={() => setShowAudienceJoker(false)}
+              />
+            )}
+            
+            {/* Telefon Jokeri */}
+            {showPhoneJoker && (
+              <PhoneJoker
+                correctAnswer={currentQuestion.answer}
+                onClose={() => setShowPhoneJoker(false)}
+              />
+            )}
+            
+            {/* Onay Dialogu */}
+            {showConfirmation && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+              >
+                <motion.div
+                  initial={{ scale: 0.5, rotateY: -90 }}
+                  animate={{ scale: 1, rotateY: 0 }}
+                  transition={{ type: "spring", stiffness: 200 }}
+                  className="bg-gradient-to-br from-game-blue via-game-purple to-game-blue/90 rounded-lg p-12 border-4 border-game-gold shadow-2xl max-w-2xl"
+                >
+                  <motion.h2 
+                    animate={{ scale: [1, 1.05, 1] }}
+                    transition={{ repeat: Infinity, duration: 1.5 }}
+                    className="text-5xl font-bold text-game-gold mb-8 text-center"
+                  >
+                    ⚠️ Emin misiniz?
+                  </motion.h2>
+                  <p className="text-white text-3xl mb-8 text-center">
+                    <span className="text-game-gold font-bold">{['A', 'B', 'C', 'D'][pendingAnswer]}</span> şıkkını seçtiniz
+                  </p>
+                  <div className="flex gap-6 justify-center">
+                    <motion.button
+                      whileHover={{ scale: 1.1, boxShadow: "0 0 30px rgba(34, 197, 94, 0.6)" }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={confirmAnswer}
+                      className="px-10 py-5 text-3xl bg-gradient-to-r from-green-600 to-green-800 text-white rounded-lg font-bold shadow-xl"
+                    >
+                      ✓ Evet, Eminim
+                    </motion.button>
+                    <motion.button
+                      whileHover={{ scale: 1.1, boxShadow: "0 0 30px rgba(239, 68, 68, 0.6)" }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={cancelAnswer}
+                      className="px-10 py-5 text-3xl bg-gradient-to-r from-red-600 to-red-800 text-white rounded-lg font-bold shadow-xl"
+                    >
+                      ✗ Hayır, Vazgeç
+                    </motion.button>
+                  </div>
+                </motion.div>
+              </motion.div>
             )}
           </motion.div>
         )}
@@ -408,20 +495,37 @@ function App() {
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.9 }}
-              className="bg-gradient-to-br from-game-blue/70 to-game-purple/70 rounded-lg p-6 mb-8 max-w-md mx-auto border-4 border-game-gold/50 shadow-2xl"
+              className="bg-gradient-to-br from-game-blue/70 to-game-purple/70 rounded-lg p-6 mb-8 max-w-2xl mx-auto border-4 border-game-gold/50 shadow-2xl"
             >
-              <h2 className="text-3xl font-bold text-game-gold mb-4">🏆 Liderlik Tablosu</h2>
-              {leaderboard.map((entry, idx) => (
-                <motion.div 
-                  key={idx}
-                  initial={{ x: -50, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ delay: 1.1 + idx * 0.1 }}
-                  className="text-white text-xl py-2 border-b border-game-gold/30 hover:bg-game-gold/20 transition-all"
-                >
-                  <span className="text-game-gold font-bold">{idx + 1}.</span> {entry.name} - <span className="text-game-gold">{entry.amount}</span>
-                </motion.div>
-              ))}
+              <h2 className="text-3xl font-bold text-game-gold mb-4 text-center">🏆 Liderlik Tablosu</h2>
+              {leaderboard.length === 0 ? (
+                <p className="text-white text-xl text-center py-4">Henüz kayıt yok</p>
+              ) : (
+                <div className="space-y-2">
+                  {leaderboard.map((entry, idx) => (
+                    <motion.div 
+                      key={idx}
+                      initial={{ x: -50, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ delay: 1.1 + idx * 0.1 }}
+                      className="bg-game-dark/50 rounded-lg p-4 border border-game-gold/30 hover:bg-game-gold/20 transition-all"
+                    >
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <span className="text-game-gold font-bold text-2xl w-8">{idx + 1}.</span>
+                          <div>
+                            <p className="text-white text-xl font-bold">{entry.name}</p>
+                            <p className="text-gray-300 text-sm">
+                              Seviye {entry.level} • {entry.date} {entry.time}
+                            </p>
+                          </div>
+                        </div>
+                        <span className="text-game-gold font-bold text-2xl">{entry.amount}</span>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              )}
             </motion.div>
 
             <motion.button

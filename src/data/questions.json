@@ -6419,5 +6419,103 @@
     "musicUrl": "https://www.youtube.com/watch?v=dHlvMKJrFYU",
     "musicTitle": "Çakkıdı",
     "note": "Kenan Doğulu'nun 2001 tarihli hit şarkısı."
+  },
+  {
+    "id": 500,
+    "level": 5,
+    "question": "Bu şarkıyı kim söyler?",
+    "options": [
+      "Tarkan",
+      "Mustafa Sandal",
+      "Teoman",
+      "Kenan Doğulu"
+    ],
+    "answer": 0,
+    "spotifyId": "0y6kdSRCVQhSdGKKKlWlNc",
+    "note": "Tarkan - Şımarık (1997)"
+  },
+  {
+    "id": 501,
+    "level": 5,
+    "question": "Bu şarkının sanatçısı kimdir?",
+    "options": [
+      "Sezen Aksu",
+      "Ajda Pekkan",
+      "Nilüfer",
+      "Bergen"
+    ],
+    "answer": 0,
+    "spotifyId": "3JvKfv6T31zO0ini8iNItO",
+    "note": "Sezen Aksu - Gülümse"
+  },
+  {
+    "id": 502,
+    "level": 5,
+    "question": "Bu şarkıyı kim seslendirmiştir?",
+    "options": [
+      "Barış Manço",
+      "Cem Karaca",
+      "Erkin Koray",
+      "Edip Akbayram"
+    ],
+    "answer": 0,
+    "spotifyId": "1XKhXB6V4Y3jnJvP8EZ8JL",
+    "note": "Barış Manço - Gülpembe (1985)"
+  },
+  {
+    "id": 503,
+    "level": 5,
+    "question": "Bu şarkının sanatçısı kimdir?",
+    "options": [
+      "Teoman",
+      "Şebnem Ferah",
+      "Manga",
+      "Duman"
+    ],
+    "answer": 1,
+    "spotifyId": "5vNO4JH3fwVKMCPLW6P8qs",
+    "note": "Şebnem Ferah - Masum Değiliz"
+  },
+  {
+    "id": 504,
+    "level": 5,
+    "question": "Bu şarkıyı kim söyler?",
+    "options": [
+      "Tarkan",
+      "Mustafa Sandal",
+      "Kenan Doğulu",
+      "Teoman"
+    ],
+    "answer": 2,
+    "spotifyId": "4cluDES4hQEUhmXj6TXkSo",
+    "note": "Kenan Doğulu - Çakkıdı (2001)"
+  },
+  {
+    "id": 505,
+    "level": 5,
+    "question": "Bu şarkının sanatçısı kimdir?",
+    "options": [
+      "Ajda Pekkan",
+      "Sezen Aksu",
+      "Nilüfer",
+      "Sertab Erener"
+    ],
+    "answer": 0,
+    "spotifyId": "1nHXJbEXILpWLiZXRvRfRg",
+    "note": "Ajda Pekkan - Yalnızlık Paylaşılmaz"
+  },
+  {
+    "id": 506,
+    "level": 5,
+    "question": "Bu şarkıyı kim seslendirmiştir?",
+    "options": [
+      "Barış Manço",
+      "Cem Karaca",
+      "Erkin Koray",
+      "Edip Akbayram"
+    ],
+    "answer": 1,
+    "spotifyId": "3xKQKNZMHQkuVNLwJwV8nE",
+    "note": "Cem Karaca - Dönence (1977)"
   }
 ]
